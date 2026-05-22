@@ -11,7 +11,7 @@ function Login() {
   return (
     <div className="login-container">
       <form className="login-card" onSubmit={handleLogin}>
-        <h1>Welcome Back</h1>
+        <h1>Welcome</h1>
 
         <input type="email" placeholder="Enter Email" required />
 
