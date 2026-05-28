@@ -29,20 +29,16 @@ from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routes.employee_routes import (
-    employee_router
-)
+from app.routes.employee_routes import employee_router
 
-from app.database.connection import (
-    engine,
-    Base
-)
-
-Base.metadata.create_all(bind=engine)
+from app.routes.auth_routes import auth_router
 
 app = FastAPI()
 
+# CORS
+
 app.add_middleware(
+
     CORSMiddleware,
 
     allow_origins=["*"],
@@ -54,12 +50,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# ROUTES
+
 app.include_router(employee_router)
 
+app.include_router(auth_router)
+
+# HOME
+
 @app.get("/")
+
 def home():
 
     return {
+
         "message":
-        "Employee Management Backend Running"
+        "Backend Running Successfully"
     }
