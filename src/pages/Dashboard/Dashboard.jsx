@@ -206,6 +206,8 @@ import {
   ResponsiveContainer,
   LineChart,
   Line,
+  AreaChart,
+  Area,
   XAxis,
   YAxis,
   Tooltip,
@@ -233,9 +235,22 @@ function Dashboard() {
 
   useEffect(() => {
 
-    fetchEmployees();
+  fetchEmployees();
 
-  }, []);
+  window.addEventListener(
+    "storage",
+    fetchEmployees
+  );
+
+  return () => {
+
+    window.removeEventListener(
+      "storage",
+      fetchEmployees
+    );
+  };
+
+}, []);
 
   const fetchEmployees =
     async () => {
@@ -313,6 +328,36 @@ function Dashboard() {
           ).length,
       })
     );
+
+    const COLORS = [
+
+  "#2563eb",
+
+  "#16a34a",
+
+  "#f59e0b",
+
+  "#dc2626"
+];
+
+const attendanceAnalytics = 
+
+
+  employees.map(
+    (employee) => ({
+
+      name:
+        employee.name
+          .split(" ")[0],
+
+      attendance:
+        employee.attendance ??
+
+        (100 - (employee.id % 20))
+    })
+  );
+
+
 
   return (
 
@@ -569,6 +614,55 @@ function Dashboard() {
               <div>Clean Typography</div>
             </div>
           </div>
+          {/* ANALYTICS SECTION */}
+
+<div className="analytics-grid">
+
+  {/* ATTENDANCE ANALYTICS */}
+
+
+<div className="analytics-card">
+
+  <h2>
+    Attendance Analytics
+  </h2>
+
+  <ResponsiveContainer
+    width="100%"
+    height={320}
+  >
+
+    <AreaChart
+      data={
+        attendanceAnalytics
+      }
+    >
+
+      <CartesianGrid
+        strokeDasharray="3 3"
+      />
+
+      <XAxis
+        dataKey="name"
+      />
+
+      <YAxis />
+
+      <Tooltip />
+
+      <Area
+        dataKey="attendance"
+        fill="#ddf786"
+      />
+
+    </AreaChart>
+
+  </ResponsiveContainer>
+
+</div>
+
+</div>
+        
         </div>
       </div>
 

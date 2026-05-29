@@ -25,6 +25,49 @@
 #         "message": "Backend Executed"
 #     }
 
+# from fastapi import FastAPI
+
+# from fastapi.middleware.cors import CORSMiddleware
+
+# from app.routes.employee_routes import employee_router
+
+# from app.routes.auth_routes import auth_router
+
+# app = FastAPI()
+
+# # CORS
+
+# app.add_middleware(
+
+#     CORSMiddleware,
+
+#     allow_origins=["*"],
+
+#     allow_credentials=True,
+
+#     allow_methods=["*"],
+
+#     allow_headers=["*"],
+# )
+
+# # ROUTES
+
+# app.include_router(employee_router)
+
+# app.include_router(auth_router)
+
+# # HOME
+
+# @app.get("/")
+
+# def home():
+
+#     return {
+
+#         "message":
+#         "Backend Running Successfully"
+#     }
+
 from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
@@ -65,5 +108,5 @@ def home():
     return {
 
         "message":
-        "Backend Running Successfully"
+        "Backend Executed"
     }

@@ -739,6 +739,7 @@ function Employees() {
 
       resetForm();
     };
+  
 
   /* EDIT BUTTON */
 
@@ -843,6 +844,8 @@ function Employees() {
       resetForm();
     };
 
+  
+
   /* DELETE EMPLOYEE */
 
   const deleteEmployee =
@@ -879,6 +882,7 @@ function Employees() {
         "Employee Deleted Successfully"
       );
     };
+  
 
   /* STATUS UPDATE */
 
