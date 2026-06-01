@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 .login-container {
   width: 100%;
   min-height: 100vh;
-  background-color: grey;
+  background: linear-gradient(to right, #dbeafe, #eef2ff);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,10 +35,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .login-card {
-  width: 300px;
-  background: rgb(247, 128, 128);
+  width: 400px;
+  background: white;
   padding: 40px;
-  border-radius: 15px;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .login-card h1 {
@@ -73,7 +74,7 @@ body::-webkit-scrollbar-thumb {
 .login-card button {
   width: 100%;
   padding: 14px;
-  background: #60ed47;
+  background: #2563eb;
   color: white;
   border: none;
   border-radius: 10px;
@@ -100,14 +101,14 @@ body::-webkit-scrollbar-thumb {
   width: 260px;
   min-width: 260px;
   height: 100vh;
-  background-color:#172554;
+  background: linear-gradient(to bottom, #0f172a, #172554);
   color: white;
   padding: 24px 20px;
   position: sticky;
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: space-between;
 }
 
 .logo {
@@ -135,6 +136,10 @@ body::-webkit-scrollbar-thumb {
 
 .nav-link:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  background: #2563eb;
 }
 
 .sidebar-user {
@@ -167,7 +172,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
   height: 80px;
-  background: grey;
+  background: white;
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
@@ -190,7 +195,7 @@ body::-webkit-scrollbar-thumb {
   width: 260px;
   display: flex;
   align-items: center;
-  background: #d7f7cf;
+  background: #f1f5f9;
   padding: 10px 15px;
   border-radius: 10px;
 }
@@ -321,7 +326,7 @@ body::-webkit-scrollbar-thumb {
 .employee-section,
 .palette-card,
 .guideline-card {
-  background: rgb(168, 211, 233);
+ background: rgb(168, 211, 233);
   padding: 24px;
   border-radius: 18px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
@@ -417,7 +422,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .guidelines div {
-  background: #f8fafc;
+  background: #97bce0;
   padding: 18px;
   border-radius: 12px;
   text-align: center;
@@ -506,8 +511,6 @@ body::-webkit-scrollbar-thumb {
 
 .employee-header {
   margin-bottom: 24px;
-  background-color: rgb(154, 204, 225);
-  border-radius: 10px;
 }
 
 .employee-header h1 {
@@ -536,7 +539,8 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #dbeafe;
   border-radius: 10px;
   outline: none;
-  background: rgb(154, 204, 225);
+  background: rgb(168, 211, 233);
+
 }
 
 .add-btn {
@@ -560,19 +564,16 @@ body::-webkit-scrollbar-thumb {
 /* TABLE */
 
 .table-wrapper {
-  background: rgb(154, 204, 225);
+  background: rgb(168, 211, 233);
   padding: 24px;
   border-radius: 18px;
   overflow-x: auto;
-  margin-bottom: 30px;
-  /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05); */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
 }
 
 .employee-table {
   width: 100%;
-  background: rgb(154, 204, 225);
-  border-radius: 10px;
-  /* border-collapse: collapse; */
+  border-collapse: collapse;
 }
 
 .employee-table th {
@@ -677,11 +678,11 @@ body::-webkit-scrollbar-thumb {
 .placeholder-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 20px;
 }
 
 .placeholder-card {
-  background: rgb(154, 204, 225);
+  background: white;
   padding: 24px;
   border-radius: 18px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
@@ -704,11 +705,11 @@ body::-webkit-scrollbar-thumb {
   padding: 8px 14px;
   border: none;
   background: #f1f5f9;
-  border-radius: 50px;
+  border-radius: 8px;
 }
 
 .active-page {
-  background: #488f19 !important;
+  background: #2563eb !important;
   color: white;
 }
 
@@ -743,6 +744,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dark-mode .navbar,
+.dark-mode .nav-icon-btn,
+.dark-mode .profile-btn,
 .dark-mode .table-wrapper,
 .dark-mode .employee-profile-section,
 .dark-mode .placeholder-card,
@@ -798,7 +801,7 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
-  background: rgb(154, 204, 225);
+  background: white;
   padding: 24px;
   border-radius: 18px;
   margin-bottom: 24px;
@@ -892,7 +895,6 @@ body::-webkit-scrollbar-thumb {
 .dark-mode .employee-table th {
   border-color: #334155;
 }
-
 /* LOADING */
 
 .loading-state,
@@ -915,7 +917,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 8px;
   cursor: pointer;
 }
-
 /* LOGIN PAGE */
 
 .login-page {
@@ -930,16 +931,16 @@ body::-webkit-scrollbar-thumb {
 
   align-items: center;
 
-  background: grey;
+  background: #eef2ff;
 }
 
 /* CARD */
 
 .login-card {
 
-  width: 400px;
+  width: 500px;
 
-  background: rgb(237, 137, 137);
+  background: white;
 
   padding: 60px 50px;
 
@@ -956,9 +957,9 @@ body::-webkit-scrollbar-thumb {
 
   text-align: center;
 
-  font-size: 30px;
+  font-size: 54px;
 
-  font-weight: 500;
+  font-weight: 700;
 
   margin-bottom: 35px;
 
@@ -982,7 +983,7 @@ body::-webkit-scrollbar-thumb {
 
   width: 100%;
 
-  height: 45px;
+  height: 65px;
 
   border: 2px solid #dbeafe;
 
@@ -1001,7 +1002,7 @@ body::-webkit-scrollbar-thumb {
 
 .login-card input:focus {
 
-  border-color: #2b67e9;
+  border-color: #2563eb;
 
   box-shadow:
     0 0 0 4px
@@ -1014,19 +1015,19 @@ body::-webkit-scrollbar-thumb {
 
   width: 100%;
 
-  height: 55px;
+  height: 65px;
 
   border: none;
 
   border-radius: 16px;
 
-  background: #4f81ec;
+  background: #2563eb;
 
   color: white;
 
-  font-size: 20px;
+  font-size: 24px;
 
-  font-weight: 500;
+  font-weight: 600;
 
   cursor: pointer;
 
@@ -1073,7 +1074,7 @@ body::-webkit-scrollbar-thumb {
 
   height: 80px;
 
-  background: grey;
+  background: white;
 
   display: flex;
 
@@ -1708,10 +1709,6 @@ body::-webkit-scrollbar-thumb {
 /* ATTENDANCE */
 /* ========================= */
 
-.attendance-page {
-
-  padding: 30px;
-}
 
 .attendance-table-wrapper {
 
@@ -1726,7 +1723,7 @@ body::-webkit-scrollbar-thumb {
 
   border-collapse: collapse;
 
-  background: rgb(168, 211, 233);
+ background: rgb(168, 211, 233);
 
   border-radius: 12px;
 
@@ -1735,7 +1732,7 @@ body::-webkit-scrollbar-thumb {
 
 .attendance-table th {
 
-  background: #df4980;
+  background: #2563eb;
 
   color: white;
 
@@ -1771,6 +1768,19 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
 
   background: #16a34a;
+}
+
+.dark-mode .attendance-table {
+  background: #0f172a;
+  color: white;
+}
+ 
+.dark-mode .active-status{
+color: darkgreen;
+}
+
+.dark-mode .inactive-status{
+color: red;
 }
 
 /* ========================= */
@@ -1812,7 +1822,7 @@ body::-webkit-scrollbar-thumb {
 
 .settings-card {
 
-  background: rgb(168, 211, 233);
+ background: rgb(168, 211, 233);
 
   padding: 25px;
 
@@ -2012,7 +2022,9 @@ input:checked + .slider:before {
 
 .dark-mode .settings-form label,
 
-.dark-mode .setting-item h4 {
+.dark-mode .setting-item h4,
+.dark-mode .settings-card h2
+ {
 
   color: white;
 }
@@ -2078,3 +2090,295 @@ input:checked + .slider:before {
 
   color: white;
 }
+
+.auth-page {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #2a3752;
+}
+
+.auth-card {
+
+  width: 350px;
+
+  background: rgb(241, 172, 172);
+
+  padding: 30px;
+
+  border-radius: 50px;
+
+  box-shadow: 0 4px 15px
+    rgba(0,0,0,0.1);
+}
+
+.auth-card h2 {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.auth-card input,
+.auth-card select {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-bottom: 15px;
+
+  border: 2px solid #070707;
+
+  border-radius: 15px;
+}
+
+.auth-card button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  background: #5a7fd0;
+
+  color: white;
+  
+  border: 2px solid #070707;
+
+  border-radius: 15px;
+
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+
+  background: #1d4ed8;
+}
+
+.password-box {
+
+  position: relative;
+}
+
+.eye-icon {
+
+  position: absolute;
+
+  right: 12px;
+
+  top: 12px;
+
+  cursor: pointer;
+}
+
+.forgot-link {
+
+  display: block;
+
+  text-align: right;
+
+  margin-bottom: 15px;
+
+  color: #2563eb;
+
+  text-decoration: none;
+}
+
+.auth-card p {
+
+  text-align: center;
+
+  margin-top: 15px;
+}
+
+.error {
+
+  color: red;
+
+  font-size: 12px;
+
+  margin-top: 4px;
+
+  margin-bottom: 8px;
+}
+
+button:disabled {
+
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+
+.modal-content {
+  background: rgb(168, 211, 233);
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-content input,
+.modal-content select {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cancel-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.required{
+  color:red;
+  margin-left:4px;
+  font-weight:bold;
+}
+
+.notification-active{
+
+  animation:
+    bellGlow 1s infinite;
+
+  color:#f59e0b;
+}
+
+@keyframes bellGlow{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.2);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+}
+
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+
+  background: red;
+  color: white;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  font-size: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-dropdown {
+  position: absolute;
+
+  right: 0;
+  top: 45px;
+
+  width: 280px;
+
+  background: white;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 4px 15px
+    rgba(0,0,0,0.15);
+
+  padding: 10px;
+
+  z-index: 999;
+}
+
+.notification-dropdown h4 {
+  margin-bottom: 10px;
+}
+
+.notification-item {
+  padding: 8px;
+
+  border-bottom:
+    1px solid #eee;
+
+  font-size: 14px;
+}
+
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
+}
+

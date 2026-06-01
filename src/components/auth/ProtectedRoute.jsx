@@ -23,7 +23,7 @@ function ProtectedRoute({
   if (!user) {
 
     return (
-      <Navigate to="/" />
+      <Navigate to="/login" />
     );
   }
 
@@ -31,18 +31,24 @@ function ProtectedRoute({
 
   if (
 
-    user.role === "User" &&
+  user?.role ===
+    "User" &&
 
-    location.pathname !==
-      "/dashboard"
-  ) {
+  location.pathname !==
+    "/dashboard" &&
 
-    return (
-      <Navigate
-        to="/dashboard"
-      />
-    );
-  }
+  location.pathname !==
+    "/employees"
+) {
+
+  return (
+
+    <Navigate
+      to="/dashboard"
+    />
+
+  );
+}
 
   return children;
 }

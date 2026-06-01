@@ -550,6 +550,10 @@ function Employees() {
     setEditId] =
     useState(null);
 
+    const [showModal,
+  setShowModal] =
+  useState(false);
+
   const [newEmployee,
     setNewEmployee] =
     useState({
@@ -562,6 +566,29 @@ function Employees() {
 
       role: "",
     });
+    const validationErrors = {
+
+  name:
+    !newEmployee.name.trim(),
+
+  email:
+    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      .test(
+        newEmployee.email
+      ),
+
+  role:
+    !newEmployee.role.trim(),
+
+  department:
+    !newEmployee.department,
+};
+
+const isFormValid =
+
+  !Object.values(
+    validationErrors
+  ).includes(true);
 
   /* FETCH EMPLOYEES */
 
@@ -733,11 +760,40 @@ function Employees() {
         )
       );
 
-      alert(
-        "Employee Added Successfully"
-      );
+     alert(
+  "Employee Added Successfully"
+);
 
-      resetForm();
+
+const notifications =
+  JSON.parse(
+    localStorage.getItem(
+      "notifications"
+    )
+  ) || [];
+
+notifications.push(
+  `Employee Added: ${employee.name}`
+);
+
+localStorage.setItem(
+  "notifications",
+  JSON.stringify(notifications)
+);
+
+window.dispatchEvent(
+  new Event("notificationUpdated")
+);
+
+window.dispatchEvent(
+  new Event(
+    "employeeAction"
+  )
+);
+
+resetForm();
+
+setShowModal(false);
     };
   
 
@@ -749,6 +805,8 @@ function Employees() {
       setEditId(
         employee.id
       );
+
+      setShowModal(true);
 
       setNewEmployee({
 
@@ -839,9 +897,38 @@ function Employees() {
         "Employee Updated Successfully"
       );
 
+
+      const notifications =
+  JSON.parse(
+    localStorage.getItem(
+      "notifications"
+    )
+  ) || [];
+
+notifications.push(
+  `Employee Updated: ${newEmployee.name}`
+);
+
+localStorage.setItem(
+  "notifications",
+  JSON.stringify(notifications)
+);
+
+window.dispatchEvent(
+  new Event("notificationUpdated")
+);
+
+window.dispatchEvent(
+  new Event(
+    "employeeAction"
+  )
+);
+
       setEditId(null);
 
       resetForm();
+
+      setShowModal(false);
     };
 
   
@@ -881,6 +968,39 @@ function Employees() {
       alert(
         "Employee Deleted Successfully"
       );
+
+      const deletedEmployee =
+  employees.find(
+    (employee) =>
+      employee.id === id
+  );
+
+const notifications =
+  JSON.parse(
+    localStorage.getItem(
+      "notifications"
+    )
+  ) || [];
+
+notifications.push(
+  `Employee Deleted: ${deletedEmployee.name}`
+);
+
+localStorage.setItem(
+  "notifications",
+  JSON.stringify(notifications)
+);
+
+window.dispatchEvent(
+  new Event("notificationUpdated")
+);
+
+window.dispatchEvent(
+  new Event(
+    "employeeAction"
+  )
+);
+
     };
   
 
@@ -1012,103 +1132,160 @@ function Employees() {
 
         {/* FORM */}
 
-        <div className="add-employee-form">
+          <div className="employee-actions">
 
-          <input
-            type="text"
-            name="name"
-            placeholder="Employee Name"
-            value={
-              newEmployee.name
-            }
-            onChange={
-              handleChange
-            }
-          />
+  <button
+    className="add-btn"
+    onClick={() => {
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Employee Email"
-            value={
-              newEmployee.email
-            }
-            onChange={
-              handleChange
-            }
-          />
+      resetForm();
 
-          <select
-            name="department"
-            value={
-              newEmployee.department
-            }
-            onChange={
-              handleChange
+      setEditId(null);
+
+      setShowModal(true);
+    }}
+  >
+
+    Add Employee
+
+  </button>
+
+</div>
+
+{
+  showModal && (
+
+    <div className="modal-overlay">
+
+      <div className="modal-content">
+
+        <h2>
+
+          {editId
+            ? "Edit Employee"
+            : "Add Employee"}
+
+        </h2>
+
+        <label>
+  Employee Name
+  <span className="required">*</span>
+</label>
+
+<input
+  type="text"
+  name="name"
+  value={newEmployee.name}
+  onChange={handleChange}
+/>
+
+        <label>
+  Email
+  <span className="required">*</span>
+</label>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Employee Email"
+          value={newEmployee.email}
+          onChange={handleChange}
+        />
+
+        <label>
+  Department
+  <span className="required">*</span>
+</label>
+
+        <select
+          name="department"
+          value={newEmployee.department}
+          onChange={handleChange}
+        >
+
+          <option value="">
+            Select Department
+          </option>
+
+          <option value="IT">
+            IT
+          </option>
+
+          <option value="HR">
+            HR
+          </option>
+
+          <option value="Finance">
+            Finance
+          </option>
+
+          <option value="Development">
+            Development
+          </option>
+
+        </select>
+
+
+        <label>
+  Role
+  <span className="required">*</span>
+</label>
+
+        <input
+          type="text"
+          name="role"
+          placeholder="Role"
+          value={newEmployee.role}
+          onChange={handleChange}
+        />
+
+        <div className="modal-buttons">
+
+          {
+            editId ? (
+
+              <button
+                onClick={updateEmployee}
+                disabled={!isFormValid}
+              >
+
+                Update
+
+              </button>
+
+            ) : (
+
+              <button
+                onClick={addEmployee}
+                disabled={!isFormValid}
+              >
+
+                Add Employee
+
+              </button>
+
+            )
+          }
+
+          <button
+            className="cancel-btn"
+            onClick={() =>
+              setShowModal(false)
             }
           >
 
-            <option value="">
-              Select Department
-            </option>
+            Cancel
 
-            <option value="IT">
-              IT
-            </option>
-
-            <option value="HR">
-              HR
-            </option>
-
-            <option value="Finance">
-              Finance
-            </option>
-
-            <option value="Design">
-              Design
-            </option>
-
-          </select>
-
-          <input
-            type="text"
-            name="role"
-            placeholder="Role"
-            value={
-              newEmployee.role
-            }
-            onChange={
-              handleChange
-            }
-          />
-
-          {editId ? (
-
-            <button
-              onClick={
-                updateEmployee
-              }
-            >
-
-              Update Employee
-
-            </button>
-
-          ) : (
-
-            <button
-              onClick={
-                addEmployee
-              }
-            >
-
-              Add Employee
-
-            </button>
-
-          )}
+          </button>
 
         </div>
+
+      </div>
+
+    </div>
+  )
+}
+       
 
         {/* SEARCH FILTER */}
 
@@ -1150,8 +1327,8 @@ function Employees() {
               Finance
             </option>
 
-            <option value="Design">
-              Design
+            <option value="Development">
+              Development
             </option>
 
           </select>
