@@ -76,6 +76,10 @@ from app.routes.employee_routes import employee_router
 
 from app.routes.auth_routes import auth_router
 
+from app.routes.role_request_routes import (
+    role_request_router
+)
+
 app = FastAPI()
 
 # CORS
@@ -99,6 +103,10 @@ app.include_router(employee_router)
 
 app.include_router(auth_router)
 
+app.include_router(
+    role_request_router
+)
+
 # HOME
 
 @app.get("/")
@@ -108,5 +116,5 @@ def home():
     return {
 
         "message":
-        "Backend Executed"
+        "Backend Successfully Executed"
     }

@@ -536,9 +536,14 @@ function Employees() {
     setSearchTerm] =
     useState("");
 
-  const [department,
-    setDepartment] =
-    useState("All");
+  const [department, setDepartment] = useState("All");
+
+const [departments, setDepartments] = useState([
+  "IT",
+  "HR",
+  "Finance",
+  "Development",
+]);
 
   const [currentPage,
     setCurrentPage] =
@@ -739,6 +744,17 @@ const isFormValid =
 
         status: "Active",
       };
+
+      if (
+  !departments.includes(
+    newEmployee.department
+  )
+) {
+  setDepartments([
+    ...departments,
+    newEmployee.department,
+  ]);
+}
 
       const updatedEmployees = [
 
@@ -1009,6 +1025,17 @@ window.dispatchEvent(
   const updateStatus =
     (id, newStatus) => {
 
+      if (
+  !departments.includes(
+    newEmployee.department
+  )
+) {
+  setDepartments([
+    ...departments,
+    newEmployee.department,
+  ]);
+}
+
       const updatedEmployees =
         employees.map(
           (employee) =>
@@ -1197,34 +1224,13 @@ window.dispatchEvent(
   <span className="required">*</span>
 </label>
 
-        <select
-          name="department"
-          value={newEmployee.department}
-          onChange={handleChange}
-        >
-
-          <option value="">
-            Select Department
-          </option>
-
-          <option value="IT">
-            IT
-          </option>
-
-          <option value="HR">
-            HR
-          </option>
-
-          <option value="Finance">
-            Finance
-          </option>
-
-          <option value="Development">
-            Development
-          </option>
-
-        </select>
-
+        <input
+  type="text"
+  name="department"
+  placeholder="Enter Department"
+  value={newEmployee.department}
+  onChange={handleChange}
+/>
 
         <label>
   Role
@@ -1315,22 +1321,14 @@ window.dispatchEvent(
               All Departments
             </option>
 
-            <option value="IT">
-              IT
-            </option>
-
-            <option value="HR">
-              HR
-            </option>
-
-            <option value="Finance">
-              Finance
-            </option>
-
-            <option value="Development">
-              Development
-            </option>
-
+            {departments.map((dept) => (
+  <option
+    key={dept}
+    value={dept}
+  >
+    {dept}
+  </option>
+))}
           </select>
 
         </div>

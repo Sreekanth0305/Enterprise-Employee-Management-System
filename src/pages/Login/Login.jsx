@@ -68,16 +68,16 @@ function Login() {
       try {
 
         const user =
-          await loginUser(
-            email,
-            password
-          );
+  await loginUser(
+    email,
+    password
+  );
 
-        setUser(user);
+setUser(user);
 
-        navigate(
-          "/dashboard"
-        );
+navigate(
+  "/dashboard"
+);
 
       } catch (err) {
 
