@@ -36,76 +36,42 @@ const API_URL =
 export const getEmployees =
   async () => {
 
-    // CHECK LOCAL STORAGE FIRST
-
-    const localEmployees =
+    const currentUser =
       JSON.parse(
         localStorage.getItem(
-          "employees"
+          "authUser"
         )
       );
 
-    if (
-      localEmployees &&
-      localEmployees.length > 0
-    ) {
-
-      return localEmployees;
-    }
-
-    // FETCH FROM BACKEND
-
     const response =
       await axios.get(
-        `${API_URL}/employees`
+        `${API_URL}/employees/${currentUser.company_id}`
       );
-
-    // SAVE TO LOCAL STORAGE
-
-    localStorage.setItem(
-
-      "employees",
-
-      JSON.stringify(
-        response.data
-      )
-    );
 
     return response.data;
   };
+    
 
 // ADD EMPLOYEE
 
 export const addEmployee =
   async (employeeData) => {
 
-    const response =
-      await axios.post(
-
-        `${API_URL}/employees`,
-
-        employeeData
-      );
-
-    const employees =
+    const currentUser =
       JSON.parse(
         localStorage.getItem(
-          "employees"
+          "authUser"
         )
-      ) || [];
+      );
 
-    employees.push(
-      response.data.employee
-    );
+    employeeData.company_id =
+      currentUser.company_id;
 
-    localStorage.setItem(
-
-      "employees",
-
-      JSON.stringify(
-        employees
-      )
-    );
+    const response =
+      await axios.post(
+        `${API_URL}/employees`,
+        employeeData
+      );
 
     return response.data;
   };
@@ -125,36 +91,7 @@ export const updateEmployee =
 
         employeeData
       );
-
-    let employees =
-      JSON.parse(
-        localStorage.getItem(
-          "employees"
-        )
-      ) || [];
-
-    employees = employees.map(
-      (employee) =>
-
-        employee.id === id
-
-          ? {
-              ...employee,
-              ...employeeData
-            }
-
-          : employee
-    );
-
-    localStorage.setItem(
-
-      "employees",
-
-      JSON.stringify(
-        employees
-      )
-    );
-
+   
     return response.data;
   };
 
@@ -168,27 +105,6 @@ export const deleteEmployee =
 
         `${API_URL}/employees/${id}`
       );
-
-    let employees =
-      JSON.parse(
-        localStorage.getItem(
-          "employees"
-        )
-      ) || [];
-
-    employees = employees.filter(
-      employee =>
-        employee.id !== id
-    );
-
-    localStorage.setItem(
-
-      "employees",
-
-      JSON.stringify(
-        employees
-      )
-    );
 
     return response.data;
   };

@@ -206,8 +206,8 @@ import {
   ResponsiveContainer,
   LineChart,
   Line,
-  AreaChart,
-  Area,
+  BarChart,
+  Bar,
   XAxis,
   YAxis,
   Tooltip,
@@ -233,23 +233,8 @@ function Dashboard() {
     setEmployees] =
     useState([]);
 
-  useEffect(() => {
-
+useEffect(() => {
   fetchEmployees();
-
-  window.addEventListener(
-    "storage",
-    fetchEmployees
-  );
-
-  return () => {
-
-    window.removeEventListener(
-      "storage",
-      fetchEmployees
-    );
-  };
-
 }, []);
 
   const fetchEmployees =
@@ -257,26 +242,10 @@ function Dashboard() {
 
       try {
 
-        const localEmployees =
-          localStorage.getItem(
-            "employees"
-          );
-
-        if (localEmployees) {
-
-          setEmployees(
-            JSON.parse(
-              localEmployees
-            )
-          );
-
-        } else {
-
           const data =
             await getEmployees();
 
           setEmployees(data);
-        }
 
       } catch (error) {
 
@@ -632,7 +601,7 @@ const attendanceAnalytics =
     height={320}
   >
 
-    <AreaChart
+    <BarChart
       data={
         attendanceAnalytics
       }
@@ -650,12 +619,12 @@ const attendanceAnalytics =
 
       <Tooltip />
 
-      <Area
+      <Bar
         dataKey="attendance"
-        fill="#ddf786"
+        fill="#16a34a"
       />
 
-    </AreaChart>
+    </BarChart>
 
   </ResponsiveContainer>
 

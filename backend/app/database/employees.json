@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "sree",
+        "email": "sree@gmail.com",
+        "department": "HR",
+        "role": "Frontend",
+        "status": "Active",
+        "attendance": 95,
+        "company_id": 1
+    },
+    {
+        "id": 2,
+        "name": "kanth",
+        "email": "kanth@gmail.com",
+        "department": "IT",
+        "role": "Developer",
+        "status": "Active",
+        "attendance": 95,
+        "company_id": 1
+    },
+    {
+        "id": 3,
+        "name": "Ram",
+        "email": "ram@gmail.com",
+        "department": "IT",
+        "role": "Developer",
+        "status": "Active",
+        "attendance": 95,
+        "company_id": 2
+    },
+    {
+        "id": 4,
+        "name": "Raju",
+        "email": "raju@gmail.com",
+        "department": "HR",
+        "role": "Frontend",
+        "status": "Active",
+        "attendance": 95,
+        "company_id": 2
+    },
+    {
+        "id": 5,
+        "name": "sita",
+        "email": "sita@gmail.com",
+        "department": "Finance",
+        "role": "Frontend",
+        "status": "Active",
+        "attendance": 95,
+        "company_id": 2
+    }
+]
