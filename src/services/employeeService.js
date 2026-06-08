@@ -91,6 +91,27 @@ export const updateEmployee =
 
         employeeData
       );
+
+    // let employees =
+    //   JSON.parse(
+    //     localStorage.getItem(
+    //       "employees"
+    //     )
+    //   ) || [];
+
+    // employees = employees.map(
+    //   (employee) =>
+
+    //     employee.id === id
+
+    //       ? {
+    //           ...employee,
+    //           ...employeeData
+    //         }
+
+    //       : employee
+    // );
+
    
     return response.data;
   };
@@ -98,12 +119,19 @@ export const updateEmployee =
 // DELETE EMPLOYEE
 
 export const deleteEmployee =
-  async (id) => {
+  async (
+    id,
+    performed_by
+  ) => {
 
     const response =
       await axios.delete(
-
-        `${API_URL}/employees/${id}`
+        `${API_URL}/employees/${id}`,
+        {
+          data: {
+            performed_by
+          }
+        }
       );
 
     return response.data;

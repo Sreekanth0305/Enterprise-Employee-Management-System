@@ -48,5 +48,25 @@
         "status": "Active",
         "attendance": 95,
         "company_id": 2
+    },
+    {
+        "id": 6,
+        "name": "Rahul",
+        "email": "rahul@gmail.com",
+        "department": "HR",
+        "role": "Developer",
+        "status": "Active",
+        "attendance": 95,
+        "company_id": 1
+    },
+    {
+        "id": 7,
+        "name": "Maha",
+        "email": "maha@gmail.com",
+        "department": "IT",
+        "role": "Frontend",
+        "status": "Active",
+        "attendance": 95,
+        "company_id": 1
     }
 ]

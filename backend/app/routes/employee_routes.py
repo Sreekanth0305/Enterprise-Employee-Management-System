@@ -42,6 +42,15 @@ from app.database.employee_db import (
     load_saved_employees
 )
 
+from datetime import datetime
+
+from app.database.audit_logs_db import (
+    audit_logs,
+    save_audit_logs
+)
+
+from fastapi import Body
+
 import json
 
 
@@ -105,6 +114,16 @@ def add_employee(employee: EmployeeSchema):
 
     save_employees(employees)
 
+    audit_logs.append({
+    "user_name": employee.performed_by,
+    "company_id": new_employee["company_id"],
+    "action": "Employee Created",
+    "related_employee": new_employee["name"],
+    "timestamp": str(datetime.now())
+})
+    
+    save_audit_logs(audit_logs)
+
     return {
 
         "message":
@@ -139,6 +158,16 @@ def update_employee(
 
             save_employees(employees)
 
+            audit_logs.append({
+    "user_name": updated_employee.performed_by,
+    "company_id": updated_employee.company_id,
+    "action": "Employee Updated",
+    "related_employee": updated_employee.name,
+    "timestamp": str(datetime.now())
+})
+            
+            save_audit_logs(audit_logs)       
+
             return {
 
                 "message":
@@ -154,7 +183,8 @@ def update_employee(
     }
 @employee_router.delete("/employees/{employee_id}")
 
-def delete_employee(employee_id: int):
+def delete_employee(employee_id: int,
+                    data: dict = Body(...)):
 
     for employee in employees:
 
@@ -163,6 +193,15 @@ def delete_employee(employee_id: int):
             employees.remove(employee)
 
             save_employees(employees)
+
+            audit_logs.append({
+    "user_name": data["performed_by"],
+    "company_id": employee["company_id"],
+    "action": "Employee Deleted",
+    "related_employee": employee["name"],
+    "timestamp": str(datetime.now())
+})
+            save_audit_logs(audit_logs)
 
             return {
 

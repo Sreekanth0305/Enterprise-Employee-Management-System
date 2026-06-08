@@ -1,0 +1,86 @@
+[
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Employee Created",
+        "related_employee": "Mahesh",
+        "timestamp": "2026-06-08 12:34:59.789890"
+    },
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Employee Deleted",
+        "related_employee": "Mahesh",
+        "timestamp": "2026-06-08 12:36:17.754364"
+    },
+    {
+        "user_name": "Arun",
+        "company_id": 2,
+        "action": "Role Change Requested",
+        "related_employee": "Arun",
+        "timestamp": "2026-06-08 12:38:57.820745"
+    },
+    {
+        "user_name": "Admin B",
+        "company_id": 2,
+        "action": "Role Change Approved",
+        "related_employee": "Arun",
+        "timestamp": "2026-06-08 12:39:34.473171"
+    },
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Employee Created",
+        "related_employee": "Rahul",
+        "timestamp": "2026-06-08 12:42:00.361795"
+    },
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Employee Updated",
+        "related_employee": "Rahul",
+        "timestamp": "2026-06-08 12:42:24.005426"
+    },
+    {
+        "user_name": "Siva",
+        "company_id": 2,
+        "action": "Role Change Requested",
+        "related_employee": "Siva",
+        "timestamp": "2026-06-08 12:44:03.868257"
+    },
+    {
+        "user_name": "Admin B",
+        "company_id": 2,
+        "action": "Role Change Rejected",
+        "related_employee": "Siva",
+        "timestamp": "2026-06-08 12:44:59.157900"
+    },
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Employee Created",
+        "related_employee": "Maha",
+        "timestamp": "2026-06-08 12:48:47.661554"
+    },
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Employee Updated",
+        "related_employee": "Maha",
+        "timestamp": "2026-06-08 12:49:11.929463"
+    },
+    {
+        "user_name": "Mahi",
+        "company_id": 2,
+        "action": "Role Change Requested",
+        "related_employee": "Mahi",
+        "timestamp": "2026-06-08 12:50:30.903327"
+    },
+    {
+        "user_name": "Admin B",
+        "company_id": 2,
+        "action": "Role Change Rejected",
+        "related_employee": "Mahi",
+        "timestamp": "2026-06-08 12:51:00.394363"
+    }
+]

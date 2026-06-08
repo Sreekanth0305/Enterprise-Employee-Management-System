@@ -13,3 +13,5 @@ class EmployeeSchema(BaseModel):
     status: str = "Active"
 
     company_id: int
+
+    performed_by: str = ""

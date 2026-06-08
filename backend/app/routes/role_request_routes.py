@@ -4,6 +4,13 @@ from app.database.role_request_db import role_requests
 
 from app.database.users_db import users
 
+from app.database.audit_logs_db import (
+    audit_logs,
+    save_audit_logs
+)
+
+from datetime import datetime
+
 from app.models.role_request_model import (
     RoleRequestSchema
 )
@@ -45,6 +52,25 @@ def create_request(
         role_request
     )
 
+    user_company_id = None
+    for user in users:
+    
+      if user["email"] == request.user_email:
+    
+            user_company_id = user["company_id"]
+    
+            break
+
+    audit_logs.append({
+    "user_name": request.user_name,
+    "company_id": user_company_id,
+    "action": "Role Change Requested",
+    "related_employee": request.user_name,
+    "timestamp": str(datetime.now())
+})
+    
+    save_audit_logs(audit_logs)
+
     return {
 
         "message":
@@ -82,26 +108,34 @@ def approve_request(
 
             # UPDATE USER ROLE
 
+            user_company_id = None
             for user in users:
 
-                if (
-                    user["email"]
-                    ==
-                    request["user_email"]
-                ):
+                if user["email"] == request["user_email"]:
+                   user_company_id = user["company_id"]
+                   break
 
-                    user["role"] = "Admin"
+        audit_logs.append({
+            "user_name":
+                "Admin A"
+                if request["admin_email"] == "admina@gmail.com"
+                else "Admin B",
+            "company_id": user_company_id,    
+            "action": "Role Change Approved",
+            "related_employee": request["user_name"],
+            "timestamp": str(datetime.now())
+        })
 
-                    break
+        save_audit_logs(audit_logs)
 
-            return {
+        return {
 
                 "message":
                 "Request Approved",
 
                 "user_role":
                 "Admin"
-            }
+        }
 
     return {
 
@@ -123,7 +157,29 @@ def reject_request(
         if request["id"] == request_id:
 
             request["status"] = "Rejected"
+            user_company_id = None
 
+            for user in users:
+            
+                if user["email"] == request["user_email"]:
+            
+                    user_company_id = user["company_id"]
+            
+                    break
+            
+            audit_logs.append({
+                "user_name":
+                    "Admin A"
+                    if request["admin_email"] == "admina@gmail.com"
+                    else "Admin B",
+    "company_id": user_company_id,                
+    "action": "Role Change Rejected",
+    "related_employee": request["user_name"],
+    "timestamp": str(datetime.now())
+})
+            
+            save_audit_logs(audit_logs)
+            
             return {
 
                 "message":

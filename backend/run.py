@@ -82,6 +82,8 @@ from app.routes.role_request_routes import (
 
 from app.routes.company_routes import company_router
 
+from app.routes.audit_routes import audit_router
+
 app = FastAPI()
 
 # CORS
@@ -112,6 +114,8 @@ app.include_router(
 app.include_router(
     company_router
 )
+
+app.include_router(audit_router)
 
 # HOME
 

@@ -643,13 +643,19 @@ const isFormValid =
 
   try {
 
-    await addEmployee({
-      name: newEmployee.name,
-      email: newEmployee.email,
-      department: newEmployee.department,
-      role: newEmployee.role,
-      status: "Active"
-    });
+    const currentUser =
+  JSON.parse(
+    localStorage.getItem("authUser")
+  );
+
+await addEmployee({
+  name: newEmployee.name,
+  email: newEmployee.email,
+  department: newEmployee.department,
+  role: newEmployee.role,
+  status: "Active",
+  performed_by: currentUser.name
+});
 
     const data = await getEmployees();
 
@@ -690,12 +696,15 @@ window.dispatchEvent(
 
   } catch (error) {
 
-    console.log(error);
+  console.error("Add Employee Error:", error);
 
-    alert("Failed to add employee");
+  if (error.response) {
+    console.log(error.response.data);
   }
-};
 
+  alert("Failed to add employee");
+}
+};
 
   /* EDIT BUTTON */
 
@@ -764,7 +773,8 @@ window.dispatchEvent(
       ...newEmployee,
       status: "Active",
       company_id:
-        currentUser.company_id
+        currentUser.company_id,
+        performed_by: currentUser.name
     }
   );
 
@@ -835,7 +845,15 @@ window.dispatchEvent(
       if (!confirmDelete)
         return;
 
-      await deleteEmployee(id);
+      const currentUser =
+  JSON.parse(
+    localStorage.getItem("authUser")
+  );
+
+await deleteEmployee(
+  id,
+  currentUser.name
+);
 
 const data =
   await getEmployees();
