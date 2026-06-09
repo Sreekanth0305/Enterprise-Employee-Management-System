@@ -91,9 +91,14 @@ def add_employee(employee: EmployeeSchema):
 
     load_employees()
 
+    new_id = max(
+        [emp["id"] for emp in employees],
+        default=0
+    ) + 1
+
     new_employee = {
 
-    "id": len(employees) + 1,
+    "id": new_id,
 
     "name": employee.name,
 
@@ -214,6 +219,34 @@ def delete_employee(employee_id: int,
         "message":
         "Employee Not Found"
     }
+
+@employee_router.put(
+    "/employees/{employee_id}/status"
+)
+def update_employee_status(
+    employee_id: int,
+    data: dict = Body(...)
+):
+
+    load_employees()
+
+    for employee in employees:
+
+        if employee["id"] == employee_id:
+
+            employee["status"] = data["status"]
+
+            save_employees(employees)
+
+            return {
+                "message":
+                "Status Updated Successfully"
+            }
+
+    return {
+        "message":
+        "Employee Not Found"
+    } 
 
 @employee_router.get(
     "/attendance-report"

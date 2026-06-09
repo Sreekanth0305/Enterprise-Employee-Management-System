@@ -63,9 +63,39 @@
         "id": 7,
         "name": "Maha",
         "email": "maha@gmail.com",
-        "department": "IT",
+        "department": "Finance",
         "role": "Frontend",
         "status": "Active",
+        "attendance": 95,
+        "company_id": 1
+    },
+    {
+        "id": 8,
+        "name": "Vani",
+        "email": "vani@gmail.com",
+        "department": "Analyst",
+        "role": "Frontend",
+        "status": "Inactive",
+        "attendance": 95,
+        "company_id": 1
+    },
+    {
+        "id": 9,
+        "name": "sri",
+        "email": "sri@gmail.com",
+        "department": "HR",
+        "role": "Developer",
+        "status": "Inactive",
+        "attendance": 95,
+        "company_id": 2
+    },
+    {
+        "id": 10,
+        "name": "shima",
+        "email": "shima@gmail.com",
+        "department": "IT",
+        "role": "Frontend",
+        "status": "On Leave",
         "attendance": 95,
         "company_id": 1
     }

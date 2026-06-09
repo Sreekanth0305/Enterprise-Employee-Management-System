@@ -184,7 +184,7 @@ function Sidebar() {
 
  <FaClipboardList />
   <span>
-    Audit Logs
+     Logs
   </span>
 
 </NavLink>

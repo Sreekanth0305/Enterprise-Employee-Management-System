@@ -27,26 +27,25 @@ def create_request(
     request: RoleRequestSchema
 ):
 
+    user_company_id = None
+
+    for user in users:
+
+     if user["email"] == request.user_email:
+
+        user_company_id = user["company_id"]
+
+        break
+
     role_request = {
-
-        "id":
-        len(role_requests) + 1,
-
-        "user_name":
-        request.user_name,
-
-        "user_email":
-        request.user_email,
-
-        "admin_email":
-        request.admin_email,
-
-        "requested_role":
-        request.requested_role,
-
-        "status":
-        "Pending"
-    }
+    "id": len(role_requests) + 1,
+    "user_name": request.user_name,
+    "user_email": request.user_email,
+    "admin_email": request.admin_email,
+    "requested_role": request.requested_role,
+    "status": "Pending",
+    "company_id": user_company_id
+}
 
     role_requests.append(
         role_request
@@ -83,12 +82,17 @@ def create_request(
 
 # GET ALL REQUESTS
 
-@role_request_router.get(
-    "/role-request"
-)
-def get_requests():
+@role_request_router.get("/role-request/{company_id}")
+def get_requests(company_id: int):
 
-    return role_requests
+    return [
+
+        request
+
+        for request in role_requests
+
+        if request.get("company_id") == company_id
+    ]
 
 
 # APPROVE REQUEST

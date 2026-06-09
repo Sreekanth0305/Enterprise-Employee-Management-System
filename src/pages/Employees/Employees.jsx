@@ -526,7 +526,8 @@ import {
   getEmployees,
   addEmployee,
   updateEmployee,
-  deleteEmployee
+  deleteEmployee,
+  updateEmployeeStatus
 } from "../../services/employeeService";
 
 import axios from "axios";
@@ -539,18 +540,26 @@ function Employees() {
     setEmployees] =
     useState([]);
 
+  const departments = [
+  ...new Set(
+    employees.map(
+      (employee) => employee.department
+    )
+  )
+];  
+
   const [searchTerm,
     setSearchTerm] =
     useState("");
 
   const [department, setDepartment] = useState("All");
 
-const [departments, setDepartments] = useState([
-  "IT",
-  "HR",
-  "Finance",
-  "Development",
-]);
+// const [departments, setDepartments] = useState([
+//   "IT",
+//   "HR",
+//   "Finance",
+//   "Development",
+// ]);
 
   const [currentPage,
     setCurrentPage] =
@@ -648,6 +657,9 @@ const isFormValid =
     localStorage.getItem("authUser")
   );
 
+  const companyId =
+  currentUser.company_id;
+
 await addEmployee({
   name: newEmployee.name,
   email: newEmployee.email,
@@ -666,7 +678,7 @@ await addEmployee({
     const notifications =
   JSON.parse(
     localStorage.getItem(
-      "notifications"
+      `notifications_${companyId}`
     )
   ) || [];
 
@@ -675,7 +687,7 @@ notifications.push(
 );
 
 localStorage.setItem(
-  "notifications",
+  `notifications_${companyId}`,
   JSON.stringify(notifications)
 );
 
@@ -767,6 +779,9 @@ window.dispatchEvent(
       )
     );
 
+  const companyId =
+  currentUser.company_id;
+
   await updateEmployee(
     editId,
     {
@@ -789,20 +804,44 @@ setEmployees(data);
         "Employee Updated Successfully"
       );
 
+const rawNotifications =
+  localStorage.getItem(
+    `notifications_${companyId}`
+  );
 
-      const notifications =
-  JSON.parse(
-    localStorage.getItem(
-      "notifications"
-    )
-  ) || [];
+console.log(
+  "rawNotifications:",
+  rawNotifications
+);
+
+const storedNotifications =
+  rawNotifications
+    ? JSON.parse(rawNotifications)
+    : [];
+
+let notifications = [];
+
+if (
+  Array.isArray(
+    storedNotifications
+  )
+) {
+
+  notifications =
+    storedNotifications;
+
+} else {
+
+  notifications = [];
+}
 
 notifications.push(
   `Employee Updated: ${newEmployee.name}`
 );
 
+
 localStorage.setItem(
-  "notifications",
+  `notifications_${companyId}`,
   JSON.stringify(notifications)
 );
 
@@ -850,6 +889,9 @@ window.dispatchEvent(
     localStorage.getItem("authUser")
   );
 
+  const companyId =
+  currentUser.company_id;
+
 await deleteEmployee(
   id,
   currentUser.name
@@ -873,7 +915,7 @@ setEmployees(data);
 const notifications =
   JSON.parse(
     localStorage.getItem(
-      "notifications"
+      `notifications_${companyId}`
     )
   ) || [];
 
@@ -882,7 +924,7 @@ notifications.push(
 );
 
 localStorage.setItem(
-  "notifications",
+ `notifications_${companyId}`,
   JSON.stringify(notifications)
 );
 
@@ -902,50 +944,32 @@ window.dispatchEvent(
   /* STATUS UPDATE */
 
   const updateStatus =
-    (id, newStatus) => {
+async (
+  id,
+  newStatus
+) => {
 
-      if (
-  !departments.includes(
-    newEmployee.department
-  )
-) {
-  setDepartments([
-    ...departments,
-    newEmployee.department,
-  ]);
-}
+  try {
 
-      const updatedEmployees =
-        employees.map(
-          (employee) =>
+    await updateEmployeeStatus(
+      id,
+      newStatus
+    );
 
-            employee.id === id
+    const data =
+      await getEmployees();
 
-              ? {
+    setEmployees(data);
 
-                  ...employee,
+  } catch (error) {
 
-                  status:
-                    newStatus,
-                }
+    console.log(error);
 
-              : employee
-        );
-
-      setEmployees(
-        updatedEmployees
-      );
-
-      localStorage.setItem(
-
-        "employees",
-
-        JSON.stringify(
-          updatedEmployees
-        )
-      );
-    };
-
+    alert(
+      "Failed to update status"
+    );
+  }
+};
   /* RESET FORM */
 
   const resetForm =
@@ -1188,29 +1212,31 @@ window.dispatchEvent(
             }
           />
 
-          <select
-            value={department}
-            onChange={(e) =>
-              setDepartment(
-                e.target.value
-              )
-            }
-          >
+         <select
+  value={department}
+  onChange={(e) =>
+    setDepartment(e.target.value)
+  }
+>
 
-            <option value="All">
-              All Departments
-            </option>
-
-            {departments.map((dept) => (
-  <option
-    key={dept}
-    value={dept}
-  >
-    {dept}
+  <option value="">
+    Select Department
   </option>
-))}
-          </select>
 
+  {departments.map(
+    (dept, index) => (
+
+      <option
+        key={index}
+        value={dept}
+      >
+        {dept}
+      </option>
+
+    )
+  )}
+
+</select>
         </div>
 
         {/* TABLE */}

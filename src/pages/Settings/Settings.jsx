@@ -93,7 +93,7 @@ const fetchRequests =
 
       const response =
         await axios.get(
-          "http://127.0.0.1:8001/role-request"
+         `http://127.0.0.1:8001/role-request/${currentUser.company_id}`
         );
 
       setRequests(

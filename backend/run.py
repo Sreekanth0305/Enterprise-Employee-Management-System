@@ -82,7 +82,11 @@ from app.routes.role_request_routes import (
 
 from app.routes.company_routes import company_router
 
+from app.routes.dashboard_routes import dashboard_router
+
 from app.routes.audit_routes import audit_router
+
+from app.routes.users_routes import user_router
 
 app = FastAPI()
 
@@ -115,7 +119,13 @@ app.include_router(
     company_router
 )
 
+app.include_router(
+    dashboard_router
+)
+
 app.include_router(audit_router)
+
+app.include_router(user_router)
 
 # HOME
 

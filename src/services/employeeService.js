@@ -92,27 +92,7 @@ export const updateEmployee =
         employeeData
       );
 
-    // let employees =
-    //   JSON.parse(
-    //     localStorage.getItem(
-    //       "employees"
-    //     )
-    //   ) || [];
-
-    // employees = employees.map(
-    //   (employee) =>
-
-    //     employee.id === id
-
-    //       ? {
-    //           ...employee,
-    //           ...employeeData
-    //         }
-
-    //       : employee
-    // );
-
-   
+       
     return response.data;
   };
 
@@ -136,3 +116,22 @@ export const deleteEmployee =
 
     return response.data;
   };
+
+  export const updateEmployeeStatus =
+async (
+  employeeId,
+  status
+) => {
+
+  const response =
+    await axios.put(
+
+      `${API_URL}/employees/${employeeId}/status`,
+
+      {
+        status
+      }
+    );
+
+  return response.data;
+};
