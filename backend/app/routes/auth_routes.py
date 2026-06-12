@@ -8,6 +8,8 @@ from app.models.auth_model import (
 
 from app.database.users_db import users
 
+from app.database.users_db import save_users
+
 auth_router = APIRouter()
 
 # SIGNUP
@@ -45,10 +47,12 @@ def signup(data: SignupSchema):
     "company_name":
         "Company A"
         if data.company_id == 1
-        else "Company B"
+        else "Company B",
+    "status": "Active"
 }
 
     users.append(new_user)
+    save_users(users)
 
     return {
 
@@ -63,6 +67,8 @@ def signup(data: SignupSchema):
 
 @auth_router.post("/login")
 def login(data: LoginSchema):
+
+    print("LOGIN REQUEST:", data.email, data.password)
 
     matched_user = next(
 
@@ -93,7 +99,9 @@ def login(data: LoginSchema):
             matched_user["role"],
 
             "user":
-            matched_user
+            matched_user,
+
+            "status":  matched_user["status"]
         }
 
     return {
@@ -134,6 +142,81 @@ def forgot_password(
     return {
 
         "success": False,
+
+        "message":
+        "User Not Found"
+    }
+
+@auth_router.get(
+    "/members/{company_id}"
+)
+def get_members(
+    company_id: int
+):
+
+    return [
+
+        user
+
+        for user in users
+
+        if user["company_id"]
+        == company_id
+    ]
+
+@auth_router.put(
+    "/users/{user_id}/deactivate"
+)
+def deactivate_user(
+    user_id: int,
+    data: dict
+):
+
+    for user in users:
+
+        if user["id"] == user_id:
+
+            user["status"] = "Deactivated"
+
+            user["deactivated_by"] = data["admin_name"]
+
+            user["deactivation_reason"] = (
+                data.get(
+                    "reason",
+                    "Account disabled by administrator"
+                )
+            )
+
+            return {
+                "message":
+                "User Deactivated"
+            }
+
+    return {
+        "message":
+        "User Not Found"
+    }
+
+@auth_router.put(
+     "/users/{user_id}/activate"
+)
+def activate_user(
+    user_id: int
+):
+
+    for user in users:
+
+        if user["id"] == user_id:
+
+            user["status"] = "Active"
+
+            return {
+
+                "message":
+                "User Activated"
+            }
+
+    return {
 
         "message":
         "User Not Found"

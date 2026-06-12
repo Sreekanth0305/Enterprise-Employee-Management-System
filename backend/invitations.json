@@ -1,0 +1,1 @@
+[{"id": 1, "email": "nani@gmail.com", "role": "User", "company_id": 2, "company_name": "Company B", "status": "Pending", "token": "0c72bbfa-cdaa-426d-b597-0d72b0d651e7"}, {"id": 2, "email": "super@gmail.com", "role": "User", "company_id": 2, "company_name": "Company B", "status": "Pending", "token": "9a6a2dff-7966-4c25-aeb1-1c7b8955dbf0"}]

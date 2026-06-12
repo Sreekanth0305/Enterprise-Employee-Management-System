@@ -166,5 +166,47 @@
         "action": "Role Change Approved",
         "related_employee": "sam",
         "timestamp": "2026-06-09 13:21:39.834895"
+    },
+    {
+        "user_name": "Admin B",
+        "company_id": 2,
+        "action": "User Deactivated",
+        "related_employee": "Nani",
+        "timestamp": "2026-06-12 20:08:54.803895"
+    },
+    {
+        "user_name": "nani@gmail.com",
+        "company_id": 2,
+        "action": "Reactivation Request Submitted",
+        "related_employee": "nani@gmail.com",
+        "timestamp": "2026-06-12 20:09:14.572824"
+    },
+    {
+        "user_name": "Admin",
+        "company_id": 2,
+        "action": "Reactivation Approved",
+        "related_employee": "nani@gmail.com",
+        "timestamp": "2026-06-12 20:09:38.556168"
+    },
+    {
+        "user_name": "Admin B",
+        "company_id": 2,
+        "action": "User Deactivated",
+        "related_employee": "Super",
+        "timestamp": "2026-06-12 20:31:22.783766"
+    },
+    {
+        "user_name": "super@gmail.com",
+        "company_id": 2,
+        "action": "Reactivation Request Submitted",
+        "related_employee": "super@gmail.com",
+        "timestamp": "2026-06-12 20:31:43.750026"
+    },
+    {
+        "user_name": "Admin",
+        "company_id": 2,
+        "action": "Reactivation Approved",
+        "related_employee": "super@gmail.com",
+        "timestamp": "2026-06-12 20:32:08.360921"
     }
 ]
