@@ -70,5 +70,37 @@
         "status": "Deactivated",
         "deactivated_by": "Admin B",
         "deactivation_reason": "Account disabled by administrator"
+    },
+    {
+        "id": 7,
+        "name": "who",
+        "email": "who@gmail.com",
+        "password": "who123",
+        "role": "User",
+        "company_id": 2,
+        "company_name": "Company B",
+        "status": "Active",
+        "attendance_access": true
+    },
+    {
+        "id": 8,
+        "name": "where",
+        "email": "where@gmail.com",
+        "password": "where",
+        "role": "User",
+        "company_id": 2,
+        "company_name": "Company B",
+        "status": "Active"
+    },
+    {
+        "id": 9,
+        "name": "asd",
+        "email": "asd@gmail.com",
+        "password": "asd123",
+        "role": "User",
+        "company_id": 2,
+        "company_name": "Company B",
+        "status": "Active",
+        "attendance_access": true
     }
 ]

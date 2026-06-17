@@ -94,6 +94,12 @@ from app.routes.reactivation_routes import router as reactivation_router
 
 from app.routes.member_routes import member_router
 
+from app.routes.leave_routes import router as leave_router
+
+from app.routes.attendance_routes import (
+    router as attendance_router
+)
+
 app = FastAPI()
 
 # CORS
@@ -140,6 +146,12 @@ app.include_router(
 )
 
 app.include_router(member_router)
+
+app.include_router(
+    leave_router
+)
+
+app.include_router(attendance_router)
 
 # HOME
 

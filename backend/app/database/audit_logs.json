@@ -208,5 +208,89 @@
         "action": "Reactivation Approved",
         "related_employee": "super@gmail.com",
         "timestamp": "2026-06-12 20:32:08.360921"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "Attendance Access Requested",
+        "related_employee": "",
+        "timestamp": "2026-06-17 12:53:59.432869"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "Attendance Access Approved",
+        "related_employee": "",
+        "timestamp": "2026-06-17 12:54:21.029464"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "Check-In",
+        "related_employee": "",
+        "timestamp": "2026-06-17 12:54:46.176589"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "Leave Request Submitted",
+        "related_employee": "",
+        "timestamp": "2026-06-17 12:55:03.806869"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "Leave Request Approved",
+        "related_employee": "",
+        "timestamp": "2026-06-17 12:55:32.734867"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "Check-Out",
+        "related_employee": "",
+        "timestamp": "2026-06-17 12:56:00.634776"
+    },
+    {
+        "company_id": 2,
+        "user_name": "asd",
+        "action": "Attendance Access Requested",
+        "related_employee": "",
+        "timestamp": "2026-06-17 13:08:18.075946"
+    },
+    {
+        "company_id": 2,
+        "user_name": "asd",
+        "action": "Attendance Access Approved",
+        "related_employee": "",
+        "timestamp": "2026-06-17 13:08:38.353477"
+    },
+    {
+        "company_id": 2,
+        "user_name": "asd",
+        "action": "Check-In",
+        "related_employee": "",
+        "timestamp": "2026-06-17 13:08:59.956674"
+    },
+    {
+        "company_id": 2,
+        "user_name": "asd",
+        "action": "Leave Request Submitted",
+        "related_employee": "",
+        "timestamp": "2026-06-17 13:09:16.040422"
+    },
+    {
+        "company_id": 2,
+        "user_name": "asd",
+        "action": "Leave Request Approved",
+        "related_employee": "",
+        "timestamp": "2026-06-17 13:09:38.009656"
+    },
+    {
+        "company_id": 2,
+        "user_name": "asd",
+        "action": "Check-Out",
+        "related_employee": "",
+        "timestamp": "2026-06-17 13:10:00.061530"
     }
 ]
