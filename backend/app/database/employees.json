@@ -3,7 +3,7 @@
         "id": 1,
         "name": "sree",
         "email": "sree@gmail.com",
-        "department": "HR",
+        "department": "Operations",
         "role": "Frontend",
         "status": "Active",
         "attendance": 95,

@@ -292,5 +292,12 @@
         "action": "Check-Out",
         "related_employee": "",
         "timestamp": "2026-06-17 13:10:00.061530"
+    },
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Department Transfer (HR \u2192 Operations)",
+        "related_employee": "sree",
+        "timestamp": "2026-06-18 11:28:55.251711"
     }
 ]

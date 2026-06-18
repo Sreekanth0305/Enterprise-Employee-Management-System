@@ -527,7 +527,8 @@ import {
   addEmployee,
   updateEmployee,
   deleteEmployee,
-  updateEmployeeStatus
+  updateEmployeeStatus,
+  transferEmployee
 } from "../../services/employeeService";
 
 import axios from "axios";
@@ -574,6 +575,18 @@ function Employees() {
     const [showModal,
   setShowModal] =
   useState(false);
+
+  const [showTransferModal,
+  setShowTransferModal] =
+  useState(false);
+
+const [selectedEmployee,
+  setSelectedEmployee] =
+  useState(null);
+
+const [transferDepartment,
+  setTransferDepartment] =
+  useState("");
 
   const [company,
   setCompany] =
@@ -939,6 +952,107 @@ window.dispatchEvent(
 );
 
     };
+
+    const handleTransfer =
+(employee) => {
+
+  setSelectedEmployee(employee);
+
+  setTransferDepartment(
+    employee.department
+  );
+
+  setShowTransferModal(true);
+};
+
+const handleTransferSubmit =
+async () => {
+
+  try {
+
+    const currentUser =
+      JSON.parse(
+        localStorage.getItem(
+          "authUser"
+        )
+      );
+
+    await transferEmployee(
+
+      selectedEmployee.id,
+
+      {
+
+        new_department:
+          transferDepartment,
+
+        performed_by:
+          currentUser.name
+
+      }
+
+    );
+
+    const updatedEmployees =
+      await getEmployees();
+
+    setEmployees(
+      updatedEmployees
+    );
+
+    const companyId =
+  currentUser.company_id;
+
+const notifications =
+  JSON.parse(
+    localStorage.getItem(
+      `notifications_${companyId}`
+    )
+  ) || [];
+
+notifications.push(
+  `Department Transfer: ${selectedEmployee.name} moved to ${transferDepartment}`
+);
+
+localStorage.setItem(
+  `notifications_${companyId}`,
+  JSON.stringify(notifications)
+);
+
+window.dispatchEvent(
+  new Event("notificationUpdated")
+);
+
+
+    setShowTransferModal(
+      false
+    );
+
+    setSelectedEmployee(
+      null
+    );
+
+    setTransferDepartment(
+      ""
+    );
+
+    alert(
+      "Department Updated Successfully"
+    );
+
+  } catch (error) {
+
+    console.log(
+      error
+    );
+
+    alert(
+      "Transfer Failed"
+    );
+
+  }
+
+};
   
 
   /* STATUS UPDATE */
@@ -1195,6 +1309,75 @@ async (
     </div>
   )
 }
+
+{
+showTransferModal && (
+
+<div className="modal-overlay">
+
+  <div className="modal-content">
+
+    <h2>
+      Transfer Department
+    </h2>
+
+    <p>
+
+      Employee:
+
+      {" "}
+
+      {selectedEmployee?.name}
+
+    </p>
+
+    <input
+  type="text"
+  placeholder="Enter New Department"
+  value={transferDepartment}
+  onChange={(e) =>
+    setTransferDepartment(
+      e.target.value
+    )
+  }
+/>
+
+    <div className="modal-buttons">
+
+      <button
+        onClick={
+          handleTransferSubmit
+        }
+      >
+
+        Update
+
+      </button>
+
+      <button
+
+        className="cancel-btn"
+
+        onClick={()=>
+
+          setShowTransferModal(false)
+
+        }
+
+      >
+
+        Cancel
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+)
+}
        
 
         {/* SEARCH FILTER */}
@@ -1262,6 +1445,8 @@ async (
                 <th>Edit</th>
 
                 <th>Delete</th>
+
+                <th>Department Transfer</th>
 
               </tr>
 
@@ -1378,6 +1563,18 @@ async (
 
                       </button>
 
+                    </td>
+
+
+                    <td>
+                      <button
+                        className="transfer-btn"
+                        onClick={() =>
+                          handleTransfer(employee)
+                        }
+                      >
+                        Transfer
+                      </button>
                     </td>
 
                   </tr>

@@ -92,7 +92,27 @@ export const updateEmployee =
         employeeData
       );
 
-       
+    // let employees =
+    //   JSON.parse(
+    //     localStorage.getItem(
+    //       "employees"
+    //     )
+    //   ) || [];
+
+    // employees = employees.map(
+    //   (employee) =>
+
+    //     employee.id === id
+
+    //       ? {
+    //           ...employee,
+    //           ...employeeData
+    //         }
+
+    //       : employee
+    // );
+
+   
     return response.data;
   };
 
@@ -135,3 +155,23 @@ async (
 
   return response.data;
 };
+
+export const transferEmployee =
+(employeeId, data) =>
+
+axios.put(
+
+`${API_URL}/employees/${employeeId}/transfer`,
+
+data
+
+);
+
+export const getDepartmentTransfers =
+(companyId) =>
+
+axios.get(
+
+`${API_URL}/department-transfers/${companyId}`
+
+);
