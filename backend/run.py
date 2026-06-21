@@ -100,6 +100,8 @@ from app.routes.attendance_routes import (
     router as attendance_router
 )
 
+from app.routes.activity_routes import router as activity_router
+
 app = FastAPI()
 
 # CORS
@@ -152,6 +154,8 @@ app.include_router(
 )
 
 app.include_router(attendance_router)
+
+app.include_router(activity_router)
 
 # HOME
 

@@ -1,0 +1,52 @@
+[
+    {
+        "user_id": 1,
+        "company_id": 1,
+        "user_name": "Admin A",
+        "email": "admina@gmail.com",
+        "last_login": "2026-06-21 16:54:29.681520",
+        "last_logout": "2026-06-21 16:55:19.348489",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 10,
+        "company_id": 1,
+        "user_name": "Baby",
+        "email": "baby@gmail.com",
+        "last_login": "2026-06-21 16:22:01.201318",
+        "last_logout": "2026-06-21 16:22:06.295667",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 11,
+        "company_id": 2,
+        "user_name": "grey",
+        "email": "grey@gmail.com",
+        "last_login": "2026-06-21 16:58:25.274018",
+        "last_logout": "2026-06-21 16:58:29.805272",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 3,
+        "company_id": 2,
+        "user_name": "Admin B",
+        "email": "adminb@gmail.com",
+        "last_login": "2026-06-21 17:08:21.998030",
+        "last_logout": "2026-06-21 17:08:34.661963",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 12,
+        "company_id": 2,
+        "user_name": "dark",
+        "email": "dark@gmail.com",
+        "last_login": "2026-06-21 17:07:32.095695",
+        "last_logout": "2026-06-21 17:07:35.272202",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    }
+]

@@ -7,5 +7,14 @@
         "transferred_by": "Admin A",
         "company_id": 1,
         "timestamp": "2026-06-18 11:28:55.250051"
+    },
+    {
+        "employee_id": 2,
+        "employee_name": "kanth",
+        "from_department": "IT",
+        "to_department": "Operations",
+        "transferred_by": "Admin A",
+        "company_id": 1,
+        "timestamp": "2026-06-18 12:16:21.557097"
     }
 ]

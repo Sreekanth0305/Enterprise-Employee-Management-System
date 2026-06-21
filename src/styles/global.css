@@ -563,33 +563,30 @@ body::-webkit-scrollbar-thumb {
 /* TABLE */
 
 .table-wrapper {
+  background: white;
   padding: 24px;
   border-radius: 18px;
   overflow-x: auto;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+
 }
 
 .employee-table {
   width: 100%;
   border-collapse: collapse;
-  background: rgb(168, 211, 233);
-}
-
-.employee-table thead {
-  background: #2563eb;
+  
 }
 
 .employee-table th {
   text-align: left;
   padding-bottom: 16px;
-  color: white;
+  color: #64748b;
 }
 
 .employee-table td {
   padding: 18px 0;
   border-top: 1px solid #e2e8f0;
 }
-
 /* STATUS */
 
 .status {
@@ -1539,11 +1536,6 @@ body::-webkit-scrollbar-thumb {
 
 /* LOGO */
 
-.sidebar-logo {
-
-  margin-bottom: 40px;
-}
-
 .sidebar-logo h2 {
 
   font-size: 30px;
@@ -1558,8 +1550,6 @@ body::-webkit-scrollbar-thumb {
   display: flex;
 
   flex-direction: column;
-
-  gap: 12px;
 
   flex: 1;
 }

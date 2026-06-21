@@ -102,5 +102,35 @@
         "company_name": "Company B",
         "status": "Active",
         "attendance_access": true
+    },
+    {
+        "id": 10,
+        "name": "Baby",
+        "email": "baby@gmail.com",
+        "password": "baby123",
+        "role": "User",
+        "company_id": 1,
+        "company_name": "Company A",
+        "status": "Active"
+    },
+    {
+        "id": 11,
+        "name": "grey",
+        "email": "grey@gmail.com",
+        "password": "grey123",
+        "role": "User",
+        "company_id": 2,
+        "company_name": "Company B",
+        "status": "Active"
+    },
+    {
+        "id": 12,
+        "name": "dark",
+        "email": "dark@gmail.com",
+        "password": "dark123",
+        "role": "User",
+        "company_id": 2,
+        "company_name": "Company B",
+        "status": "Active"
     }
 ]

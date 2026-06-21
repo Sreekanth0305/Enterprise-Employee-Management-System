@@ -189,6 +189,8 @@ def deactivate_user(
                 )
             )
 
+            save_users(users)
+
             return {
                 "message":
                 "User Deactivated"
@@ -211,6 +213,8 @@ def activate_user(
         if user["id"] == user_id:
 
             user["status"] = "Active"
+
+            save_users(users)
 
             return {
 
