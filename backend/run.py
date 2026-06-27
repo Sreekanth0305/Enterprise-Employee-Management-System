@@ -108,6 +108,9 @@ from app.routes.export_routes import router as export_router
 
 from app.routes.activity_routes import router as activity_router
 
+from app.routes.suspension_routes import router as suspension_router
+
+
 app = FastAPI()
 
 # CORS
@@ -168,6 +171,9 @@ app.include_router(export_router)
 # )
 
 app.include_router(activity_router)
+
+app.include_router(suspension_router)
+
 
 # HOME
 

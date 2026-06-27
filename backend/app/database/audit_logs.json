@@ -551,5 +551,89 @@
         "action": "User Logout",
         "related_employee": "Admin A",
         "timestamp": "2026-06-23 14:01:22.549750"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-06-27 12:38:38.435986"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Suspended",
+        "related_employee": "there",
+        "timestamp": "2026-06-27 12:39:09.398240"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-06-27 12:39:14.648358"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "User Login",
+        "related_employee": "there",
+        "timestamp": "2026-06-27 12:39:27.365484"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there@gmail.com",
+        "action": "Reinstatement Request Submitted",
+        "related_employee": "there@gmail.com",
+        "timestamp": "2026-06-27 12:39:33.577958"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-06-27 12:39:55.322023"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin",
+        "action": "Reinstatement Approved",
+        "related_employee": "there",
+        "timestamp": "2026-06-27 12:40:07.299770"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-06-27 12:41:31.830971"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "User Login",
+        "related_employee": "there",
+        "timestamp": "2026-06-27 12:41:44.280192"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "User Logout",
+        "related_employee": "there",
+        "timestamp": "2026-06-27 12:41:56.563381"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-06-27 12:42:12.338569"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-06-27 12:45:36.746380"
     }
 ]
