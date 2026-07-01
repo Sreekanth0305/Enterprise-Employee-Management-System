@@ -5,6 +5,9 @@ import axios from "axios";
 const API_URL =
   "https://jsonplaceholder.typicode.com/users";
 
+const BACKEND_URL =
+  "http://127.0.0.1:8001";
+
 /* ONLY ADMIN */
 
 const ADMIN_EMAIL =
@@ -60,6 +63,13 @@ export const loginUser =
             password
           }
         );
+      
+       console.log(
+    "LOGIN RESPONSE",
+    response.data
+  );
+
+  
 
       if (
         response.data.success
@@ -110,3 +120,21 @@ export const getCurrentUser =
       )
     );
   };
+
+export const getProfileCompletion = async () => {
+
+    const currentUser = JSON.parse(
+
+        localStorage.getItem("authUser")
+
+    );
+
+    const response = await axios.get(
+
+        `${BACKEND_URL}/profile-completion/${currentUser.company_id}`
+
+    );
+
+    return response.data;
+
+};

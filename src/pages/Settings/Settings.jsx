@@ -17,30 +17,38 @@ from "../../services/leaveService";
 function Settings() {
 
   const [darkMode,
-    setDarkMode] =
-    useState(false);
+  setDarkMode] =
+  useState(() => {
+
+    return JSON.parse(
+      localStorage.getItem(
+        "darkMode"
+      )
+    ) || false;
+
+  });
 
   const [notifications,
     setNotifications] =
     useState(true);
-
-  const [email,
-    setEmail] =
-    useState(
-      "admin@gmail.com"
-    );
-
-  const [name,
-    setName] =
-    useState(
-      "Admin User"
-    );
 
   const currentUser =
   JSON.parse(
     localStorage.getItem(
       "authUser"
     )
+  );  
+
+  const [email,
+  setEmail] =
+  useState(
+    currentUser?.email || ""
+  );
+
+const [name,
+  setName] =
+  useState(
+    currentUser?.name || ""
   );
 
 const [currentPassword,
@@ -68,6 +76,37 @@ const [adminEmail,
   =
   useState([]);
 
+  useEffect(() => {
+
+  const updateDarkMode = () => {
+
+    const savedMode =
+      JSON.parse(
+        localStorage.getItem(
+          "darkMode"
+        )
+      ) || false;
+
+    setDarkMode(savedMode);
+
+  };
+
+  window.addEventListener(
+    "darkModeChanged",
+    updateDarkMode
+  );
+
+  return () => {
+
+    window.removeEventListener(
+      "darkModeChanged",
+      updateDarkMode
+    );
+
+  };
+
+}, []);
+
 
   // SAVE SETTINGS
 
@@ -82,17 +121,58 @@ const [adminEmail,
 
   // DARK MODE
 
-  const handleDarkMode =
+  const handleDarkMode = () => {
+
+  const newMode = !darkMode;
+
+  setDarkMode(newMode);
+
+  document.body.classList.toggle(
+    "dark-mode",
+    newMode
+  );
+
+  localStorage.setItem(
+    "darkMode",
+    JSON.stringify(newMode)
+  );
+
+  window.dispatchEvent(
+    new Event("darkModeChanged")
+  );
+
+};
+ useEffect(() => {
+
+  const updateDarkMode =
     () => {
 
-      setDarkMode(
-        !darkMode
-      );
+      const mode =
+        JSON.parse(
+          localStorage.getItem(
+            "darkMode"
+          )
+        ) || false;
 
-      document.body.classList.toggle(
-        "dark-mode"
-      );
+      setDarkMode(mode);
+
     };
+
+  window.addEventListener(
+    "darkModeChanged",
+    updateDarkMode
+  );
+
+  return () => {
+
+    window.removeEventListener(
+      "darkModeChanged",
+      updateDarkMode
+    );
+
+  };
+
+}, []); 
   
   useEffect(() => {
 

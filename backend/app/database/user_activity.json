@@ -4,8 +4,8 @@
         "company_id": 1,
         "user_name": "Admin A",
         "email": "admina@gmail.com",
-        "last_login": "2026-06-27 12:42:12.337440",
-        "last_logout": "2026-06-27 12:45:36.742491",
+        "last_login": "2026-07-01 11:59:01.880442",
+        "last_logout": "2026-07-01 11:59:19.485203",
         "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
         "ip_address": "127.0.0.1"
     },
@@ -34,9 +34,9 @@
         "company_id": 2,
         "user_name": "Admin B",
         "email": "adminb@gmail.com",
-        "last_login": "2026-06-21 17:08:21.998030",
-        "last_logout": "2026-06-21 17:08:34.661963",
-        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0",
+        "last_login": "2026-06-27 21:58:35.905968",
+        "last_logout": "2026-06-27 21:58:47.110779",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
         "ip_address": "127.0.0.1"
     },
     {
@@ -54,8 +54,78 @@
         "company_id": 1,
         "user_name": "there",
         "email": "there@gmail.com",
-        "last_login": "2026-06-27 12:41:44.277261",
-        "last_logout": "2026-06-27 12:41:56.559133",
+        "last_login": "2026-06-27 21:04:31.478946",
+        "last_logout": "2026-06-27 21:29:40.000837",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 14,
+        "company_id": 2,
+        "user_name": "this",
+        "email": "this@gmail.com",
+        "last_login": "2026-06-27 12:52:26.811099",
+        "last_logout": "2026-06-27 12:52:31.529848",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 15,
+        "company_id": 1,
+        "user_name": "prince",
+        "email": "prince@gmail.com",
+        "last_login": "2026-07-01 11:51:10.333853",
+        "last_logout": "2026-07-01 11:53:39.926920",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 7,
+        "company_id": 2,
+        "user_name": "who",
+        "email": "who@gmail.com",
+        "last_login": "2026-06-27 21:33:50.810859",
+        "last_logout": "2026-06-27 21:49:39.683870",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 6,
+        "company_id": 2,
+        "user_name": "Super",
+        "email": "super@gmail.com",
+        "last_login": "2026-06-27 21:52:31.479399",
+        "last_logout": "",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 16,
+        "company_id": 2,
+        "user_name": "allu",
+        "email": "allu@gmail.com",
+        "last_login": "2026-06-27 21:58:03.318875",
+        "last_logout": "2026-06-27 21:58:23.366824",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 17,
+        "company_id": 1,
+        "user_name": "naga",
+        "email": "naga@gmail.com",
+        "last_login": "2026-06-27 22:00:49.854048",
+        "last_logout": "2026-06-27 22:00:57.105099",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "127.0.0.1"
+    },
+    {
+        "user_id": 18,
+        "company_id": 1,
+        "user_name": "virat",
+        "email": "virat@gmail.com",
+        "last_login": "2026-07-01 11:58:21.846931",
+        "last_logout": "2026-07-01 11:58:49.812719",
         "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
         "ip_address": "127.0.0.1"
     }
