@@ -1174,5 +1174,453 @@
         "action": "User Logout",
         "related_employee": "Admin A",
         "timestamp": "2026-07-01 11:59:19.488323"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-02 16:46:34.639104"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Created",
+        "related_employee": "May Day",
+        "timestamp": "2026-07-02 16:48:14.946259"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Created",
+        "related_employee": "New Year",
+        "timestamp": "2026-07-02 16:49:03.721333"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "New Year",
+        "timestamp": "2026-07-02 16:49:13.015107"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Created",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 16:50:32.661612"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Created",
+        "related_employee": "Company Anniversary",
+        "timestamp": "2026-07-02 16:52:24.977104"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 16:52:58.926413"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Created",
+        "related_employee": "welbeing day",
+        "timestamp": "2026-07-02 16:54:23.812433"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 16:54:54.704642"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "welbeing day",
+        "timestamp": "2026-07-02 16:55:37.847499"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "welbeing day",
+        "timestamp": "2026-07-02 16:55:47.454568"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 16:56:13.343668"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 16:56:42.680054"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "welbeing day",
+        "timestamp": "2026-07-02 16:56:50.425767"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 16:57:14.431288"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 16:57:37.941908"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 16:58:22.810628"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "welbeing day",
+        "timestamp": "2026-07-02 16:58:30.614731"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-02 16:58:59.153742"
+    },
+    {
+        "company_id": 1,
+        "user_name": "naga",
+        "action": "User Login",
+        "related_employee": "naga",
+        "timestamp": "2026-07-02 16:59:22.823429"
+    },
+    {
+        "company_id": 1,
+        "user_name": "naga",
+        "action": "User Logout",
+        "related_employee": "naga",
+        "timestamp": "2026-07-02 16:59:41.604512"
+    },
+    {
+        "company_id": 1,
+        "user_name": "prince",
+        "action": "User Login",
+        "related_employee": "prince",
+        "timestamp": "2026-07-02 17:00:01.531553"
+    },
+    {
+        "company_id": 1,
+        "user_name": "prince",
+        "action": "User Logout",
+        "related_employee": "prince",
+        "timestamp": "2026-07-02 17:00:15.885290"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "User Login",
+        "related_employee": "there",
+        "timestamp": "2026-07-02 17:00:52.013223"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "Attendance Access Requested",
+        "related_employee": "there",
+        "timestamp": "2026-07-02 17:01:09.048275"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "User Logout",
+        "related_employee": "there",
+        "timestamp": "2026-07-02 17:01:19.565139"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-02 17:01:35.134494"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-02 17:01:42.776365"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Login",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-02 17:01:58.061930"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "Attendance Access Requested",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-02 17:02:03.471213"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Logout",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-02 17:02:08.662681"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Login",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-02 17:02:40.663842"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Logout",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-02 17:03:14.727117"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "User Login",
+        "related_employee": "who",
+        "timestamp": "2026-07-02 17:03:53.565583"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "Check-In",
+        "related_employee": "who",
+        "timestamp": "2026-07-02 17:04:01.532995"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "Check-Out",
+        "related_employee": "who",
+        "timestamp": "2026-07-02 17:04:24.765848"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "User Logout",
+        "related_employee": "who",
+        "timestamp": "2026-07-02 17:04:28.132107"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Login",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-02 17:04:39.545468"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "Holiday Created",
+        "related_employee": "welbeing day",
+        "timestamp": "2026-07-02 17:05:15.812975"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Logout",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-02 17:05:21.707215"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "User Login",
+        "related_employee": "who",
+        "timestamp": "2026-07-02 17:05:32.689054"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "User Logout",
+        "related_employee": "who",
+        "timestamp": "2026-07-02 17:05:53.224830"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-02 17:06:04.535917"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Deleted",
+        "related_employee": "Company Anniversary",
+        "timestamp": "2026-07-02 17:06:15.392122"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-02 17:06:41.912444"
+    },
+    {
+        "company_id": 1,
+        "user_name": "prince",
+        "action": "User Login",
+        "related_employee": "prince",
+        "timestamp": "2026-07-02 17:07:58.209155"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 18:16:24.698261"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "Holiday Updated",
+        "related_employee": "Independence Day",
+        "timestamp": "2026-07-02 18:40:23.361563"
+    },
+    {
+        "company_id": 1,
+        "user_name": "prince",
+        "action": "User Logout",
+        "related_employee": "prince",
+        "timestamp": "2026-07-02 18:42:45.723858"
+    },
+    {
+        "company_id": 2,
+        "user_name": "User B",
+        "action": "User Login",
+        "related_employee": "User B",
+        "timestamp": "2026-07-02 18:43:05.313002"
+    },
+    {
+        "company_id": 2,
+        "user_name": "User B",
+        "action": "Attendance Access Requested",
+        "related_employee": "User B",
+        "timestamp": "2026-07-02 18:43:08.737191"
+    },
+    {
+        "company_id": 2,
+        "user_name": "User B",
+        "action": "User Logout",
+        "related_employee": "User B",
+        "timestamp": "2026-07-02 18:43:22.786088"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-02 18:45:02.727614"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-02 18:58:57.537918"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Login",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-02 19:22:31.469301"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "Holiday Created",
+        "related_employee": "Republic Day",
+        "timestamp": "2026-07-02 19:23:17.068028"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "Holiday Updated",
+        "related_employee": "Republic Day",
+        "timestamp": "2026-07-02 19:23:26.108514"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Logout",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-02 19:23:38.776367"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "User Login",
+        "related_employee": "who",
+        "timestamp": "2026-07-02 19:23:50.833504"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "User Logout",
+        "related_employee": "who",
+        "timestamp": "2026-07-02 19:24:05.033684"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Login",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-02 19:24:17.852810"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "Holiday Deleted",
+        "related_employee": "Republic Day",
+        "timestamp": "2026-07-02 19:24:24.665195"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Logout",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-02 19:24:37.288649"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "User Login",
+        "related_employee": "who",
+        "timestamp": "2026-07-02 19:27:57.717986"
     }
 ]

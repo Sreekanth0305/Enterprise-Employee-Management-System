@@ -110,6 +110,8 @@ from app.routes.activity_routes import router as activity_router
 
 from app.routes.suspension_routes import router as suspension_router
 
+from app.routes.holiday_routes import holiday_router
+
 
 app = FastAPI()
 
@@ -173,6 +175,8 @@ app.include_router(export_router)
 app.include_router(activity_router)
 
 app.include_router(suspension_router)
+
+app.include_router(holiday_router)
 
 
 # HOME

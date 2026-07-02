@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "holiday_name": "May Day",
+        "holiday_date": "2026-05-01",
+        "description": "Workers Holiday",
+        "holiday_type": "Public Holiday",
+        "recurring": true,
+        "company_id": 1,
+        "created_by": "Admin A",
+        "is_deleted": false
+    },
+    {
+        "id": 2,
+        "holiday_name": "New Year",
+        "holiday_date": "2026-01-01",
+        "description": "Celebration Day",
+        "holiday_type": "Public Holiday",
+        "recurring": true,
+        "company_id": 1,
+        "created_by": "Admin A",
+        "is_deleted": false
+    },
+    {
+        "id": 3,
+        "holiday_name": "Independence Day",
+        "holiday_date": "2026-08-15",
+        "description": "India pepole got freedom",
+        "holiday_type": "Public Holiday",
+        "recurring": true,
+        "company_id": 1,
+        "created_by": "Admin A",
+        "is_deleted": false
+    },
+    {
+        "id": 4,
+        "holiday_name": "Company Anniversary",
+        "holiday_date": "2026-10-01",
+        "description": "company established day",
+        "holiday_type": "Company Holiday",
+        "recurring": true,
+        "company_id": 1,
+        "created_by": "Admin A",
+        "is_deleted": true
+    },
+    {
+        "id": 5,
+        "holiday_name": "welbeing day",
+        "holiday_date": "2026-07-02",
+        "description": "rest day",
+        "holiday_type": "Optional Holiday",
+        "recurring": true,
+        "company_id": 1,
+        "created_by": "Admin A",
+        "is_deleted": false
+    },
+    {
+        "id": 6,
+        "holiday_name": "welbeing day",
+        "holiday_date": "2026-07-02",
+        "description": "rest day",
+        "holiday_type": "Optional Holiday",
+        "recurring": true,
+        "company_id": 2,
+        "created_by": "Admin B",
+        "is_deleted": false
+    },
+    {
+        "id": 7,
+        "holiday_name": "Republic Day",
+        "holiday_date": "2026-01-26",
+        "description": "celebration day",
+        "holiday_type": "Public Holiday",
+        "recurring": true,
+        "company_id": 2,
+        "created_by": "Admin B",
+        "is_deleted": true
+    }
+]
