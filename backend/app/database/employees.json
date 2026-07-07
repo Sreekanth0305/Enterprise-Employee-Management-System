@@ -7,17 +7,39 @@
         "role": "Frontend",
         "status": "Active",
         "attendance": 95,
-        "company_id": 1
+        "company_id": 1,
+        "profile_completion": 20,
+        "missing_fields": [
+            "first_name",
+            "last_name",
+            "phone_number",
+            "designation",
+            "profile_picture",
+            "address",
+            "date_of_joining",
+            "employee_id"
+        ]
     },
     {
         "id": 2,
         "name": "kanth",
         "email": "kanth@gmail.com",
-        "department": "Operations",
+        "department": "IT",
         "role": "Developer",
         "status": "Active",
         "attendance": 95,
-        "company_id": 1
+        "company_id": 1,
+        "profile_completion": 20,
+        "missing_fields": [
+            "first_name",
+            "last_name",
+            "phone_number",
+            "designation",
+            "profile_picture",
+            "address",
+            "date_of_joining",
+            "employee_id"
+        ]
     },
     {
         "id": 3,
@@ -57,7 +79,18 @@
         "role": "Developer",
         "status": "Active",
         "attendance": 95,
-        "company_id": 1
+        "company_id": 1,
+        "profile_completion": 20,
+        "missing_fields": [
+            "first_name",
+            "last_name",
+            "phone_number",
+            "designation",
+            "profile_picture",
+            "address",
+            "date_of_joining",
+            "employee_id"
+        ]
     },
     {
         "id": 7,
@@ -67,7 +100,18 @@
         "role": "Frontend",
         "status": "Active",
         "attendance": 95,
-        "company_id": 1
+        "company_id": 1,
+        "profile_completion": 20,
+        "missing_fields": [
+            "first_name",
+            "last_name",
+            "phone_number",
+            "designation",
+            "profile_picture",
+            "address",
+            "date_of_joining",
+            "employee_id"
+        ]
     },
     {
         "id": 8,
@@ -77,7 +121,18 @@
         "role": "Frontend",
         "status": "Inactive",
         "attendance": 95,
-        "company_id": 1
+        "company_id": 1,
+        "profile_completion": 20,
+        "missing_fields": [
+            "first_name",
+            "last_name",
+            "phone_number",
+            "designation",
+            "profile_picture",
+            "address",
+            "date_of_joining",
+            "employee_id"
+        ]
     },
     {
         "id": 9,
@@ -97,6 +152,17 @@
         "role": "Frontend",
         "status": "On Leave",
         "attendance": 95,
-        "company_id": 1
+        "company_id": 1,
+        "profile_completion": 20,
+        "missing_fields": [
+            "first_name",
+            "last_name",
+            "phone_number",
+            "designation",
+            "profile_picture",
+            "address",
+            "date_of_joining",
+            "employee_id"
+        ]
     }
 ]

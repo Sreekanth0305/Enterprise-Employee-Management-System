@@ -1622,5 +1622,599 @@
         "action": "User Login",
         "related_employee": "who",
         "timestamp": "2026-07-02 19:27:57.717986"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-02 22:31:05.071284"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "User Login",
+        "related_employee": "who",
+        "timestamp": "2026-07-03 11:30:27.800592"
+    },
+    {
+        "company_id": 2,
+        "user_name": "who",
+        "action": "User Logout",
+        "related_employee": "who",
+        "timestamp": "2026-07-03 11:45:22.221467"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 11:45:36.133146"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 11:57:25.973252"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Login",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-03 11:57:36.947597"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Logout",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-03 11:59:49.561768"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 12:00:02.944416"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 12:45:23.009619"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Login",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-03 12:45:50.092661"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Logout",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-03 13:01:44.542730"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Login",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-03 13:02:01.819811"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Logout",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-03 13:02:23.946918"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 13:02:35.081188"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin",
+        "action": "Attendance Access Approved",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-03 13:02:40.438182"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 13:02:47.036609"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Login",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-03 13:02:58.941973"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 13:28:24.025316"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 13:28:47.512134"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Login",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-03 13:29:01.058875"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Logout",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-03 13:29:16.904171"
+    },
+    {
+        "company_id": 1,
+        "user_name": "naga",
+        "action": "User Login",
+        "related_employee": "naga",
+        "timestamp": "2026-07-03 13:29:28.270693"
+    },
+    {
+        "company_id": 1,
+        "user_name": "naga",
+        "action": "User Login",
+        "related_employee": "naga",
+        "timestamp": "2026-07-03 13:31:24.047825"
+    },
+    {
+        "company_id": 1,
+        "user_name": "naga",
+        "action": "User Logout",
+        "related_employee": "naga",
+        "timestamp": "2026-07-03 13:45:38.507056"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 13:45:49.304520"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin",
+        "action": "Attendance Access Approved",
+        "related_employee": "naga",
+        "timestamp": "2026-07-03 13:46:02.159463"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin",
+        "action": "Attendance Access Approved",
+        "related_employee": "there",
+        "timestamp": "2026-07-03 13:46:03.427093"
+    },
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Employee Updated",
+        "related_employee": "kanth",
+        "timestamp": "2026-07-03 13:46:32.722436"
+    },
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Employee Created",
+        "related_employee": "rani",
+        "timestamp": "2026-07-03 13:47:27.015321"
+    },
+    {
+        "user_name": "Admin A",
+        "company_id": 1,
+        "action": "Employee Deleted",
+        "related_employee": "rani",
+        "timestamp": "2026-07-03 13:49:15.019087"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Suspended",
+        "related_employee": "virat",
+        "timestamp": "2026-07-03 14:27:20.061182"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-03 14:27:22.389300"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "action": "User Login",
+        "related_employee": "virat",
+        "timestamp": "2026-07-03 14:27:36.826705"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "action": "Attendance Access Requested",
+        "related_employee": "virat",
+        "timestamp": "2026-07-03 14:27:51.740315"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "00582e63-c3aa-4708-bd32-4e3cb2c87382",
+        "action": "User Login",
+        "performed_by": "Admin A",
+        "timestamp": "2026-07-07 14:33:36.625444"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "00582e63-c3aa-4708-bd32-4e3cb2c87382",
+        "action": "Trusted Device Added",
+        "performed_by": "Admin A",
+        "timestamp": "2026-07-07 14:33:36.639195"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:33:36.682603"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin",
+        "action": "Attendance Access Approved",
+        "related_employee": "virat",
+        "timestamp": "2026-07-07 14:33:46.139503"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:34:53.682239"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "82c331db-e16d-4a71-9ecf-5d15f78344c8",
+        "action": "User Login",
+        "performed_by": "virat",
+        "timestamp": "2026-07-07 14:35:09.312983"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "82c331db-e16d-4a71-9ecf-5d15f78344c8",
+        "action": "Trusted Device Added",
+        "performed_by": "virat",
+        "timestamp": "2026-07-07 14:35:09.330443"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "action": "User Login",
+        "related_employee": "virat",
+        "timestamp": "2026-07-07 14:35:09.358429"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "action": "User Logout",
+        "related_employee": "virat",
+        "timestamp": "2026-07-07 14:35:19.656225"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:35:31.578920"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:36:04.787563"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "b03b83b0-faf2-4514-921a-ac29dcce40e8",
+        "action": "User Login",
+        "performed_by": "Baby",
+        "timestamp": "2026-07-07 14:37:04.350215"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "b03b83b0-faf2-4514-921a-ac29dcce40e8",
+        "action": "Trusted Device Added",
+        "performed_by": "Baby",
+        "timestamp": "2026-07-07 14:37:04.369833"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Login",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-07 14:37:04.396243"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "device_name": "Win",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "b03b83b0-faf2-4514-921a-ac29dcce40e8",
+        "action": "Trusted Device Renamed",
+        "performed_by": "Baby",
+        "timestamp": "2026-07-07 14:37:15.881144"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Logout",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-07 14:39:50.522491"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:40:07.522625"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "82c331db-e16d-4a71-9ecf-5d15f78344c8",
+        "action": "Session Revoked",
+        "performed_by": "Admin",
+        "timestamp": "2026-07-07 14:40:44.467380"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "82c331db-e16d-4a71-9ecf-5d15f78344c8",
+        "action": "Force Logout Initiated",
+        "performed_by": "Admin",
+        "timestamp": "2026-07-07 14:40:44.487472"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "00582e63-c3aa-4708-bd32-4e3cb2c87382",
+        "action": "Session Revoked",
+        "performed_by": "Admin",
+        "timestamp": "2026-07-07 14:41:00.359314"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "00582e63-c3aa-4708-bd32-4e3cb2c87382",
+        "action": "Force Logout Initiated",
+        "performed_by": "Admin",
+        "timestamp": "2026-07-07 14:41:00.379150"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:42:04.764486"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "098402aa-a765-4c0f-8631-c9bff2c84d28",
+        "action": "User Login",
+        "performed_by": "Admin B",
+        "timestamp": "2026-07-07 14:42:17.978496"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "098402aa-a765-4c0f-8631-c9bff2c84d28",
+        "action": "Trusted Device Added",
+        "performed_by": "Admin B",
+        "timestamp": "2026-07-07 14:42:18.003760"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Login",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-07 14:42:18.029788"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin",
+        "action": "Attendance Access Approved",
+        "related_employee": "allu",
+        "timestamp": "2026-07-07 14:42:23.513601"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin",
+        "action": "Attendance Access Approved",
+        "related_employee": "User B",
+        "timestamp": "2026-07-07 14:42:24.760295"
+    },
+    {
+        "company_id": 2,
+        "user_name": "Admin B",
+        "action": "User Logout",
+        "related_employee": "Admin B",
+        "timestamp": "2026-07-07 14:42:46.044324"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "736e3734-65fb-48a8-a12d-03f2d73bc334",
+        "action": "User Login",
+        "performed_by": "Admin A",
+        "timestamp": "2026-07-07 14:43:24.649860"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "736e3734-65fb-48a8-a12d-03f2d73bc334",
+        "action": "Trusted Device Added",
+        "performed_by": "Admin A",
+        "timestamp": "2026-07-07 14:43:24.670354"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:43:24.698187"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:44:21.222476"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "16235c72-1ba5-4b5b-b84b-2fc4fb61fdf9",
+        "action": "User Login",
+        "performed_by": "virat",
+        "timestamp": "2026-07-07 14:44:37.994445"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "16235c72-1ba5-4b5b-b84b-2fc4fb61fdf9",
+        "action": "Trusted Device Added",
+        "performed_by": "virat",
+        "timestamp": "2026-07-07 14:44:38.012151"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "action": "User Login",
+        "related_employee": "virat",
+        "timestamp": "2026-07-07 14:44:38.045104"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "device_name": "Windows",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "16235c72-1ba5-4b5b-b84b-2fc4fb61fdf9",
+        "action": "Trusted Device Renamed",
+        "performed_by": "virat",
+        "timestamp": "2026-07-07 14:44:52.827029"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.4",
+        "session_identifier": "82c331db-e16d-4a71-9ecf-5d15f78344c8",
+        "action": "Trusted Device Removed",
+        "performed_by": "virat",
+        "timestamp": "2026-07-07 14:45:08.784769"
+    },
+    {
+        "company_id": 1,
+        "user_name": "virat",
+        "action": "User Logout",
+        "related_employee": "virat",
+        "timestamp": "2026-07-07 14:45:35.100690"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:45:46.676751"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-07 14:46:00.977224"
     }
 ]

@@ -150,6 +150,23 @@ setAttendanceRequests
 
 ] = useState([]);
 
+const loadAttendanceRequests = async () => {
+
+  try {
+
+    const response =
+      await getAttendanceRequests(companyId);
+
+    setAttendanceRequests(response.data);
+
+  } catch (error) {
+
+    console.log(error);
+
+  }
+
+};
+
 const [leaveRequests, setLeaveRequests] =
   useState([]);
 
@@ -255,11 +272,15 @@ useEffect(() => {
 
     loadNotifications();
 
+    loadAttendanceRequests();
+
     const interval = setInterval(() => {
 
         loadNotifications();
 
-    }, 3000);
+        loadAttendanceRequests();
+
+    },3000);
 
     return () => clearInterval(interval);
 
@@ -523,18 +544,29 @@ attendanceRequests.length
 ) > 0 &&
 !showNotifications && (
 
-<span className="notification-count">
+(
+  notifications.filter(
+    notification => !notification.read
+  ).length +
+  (user?.role === "Admin"
+    ? attendanceRequests.length
+    : 0)
+) > 0 && (
 
-{
-notifications.filter(
-notification => !notification.read
-).length
-+
-attendanceRequests.length
-}
+  <span className="notification-count">
 
-</span>
+    {
+      notifications.filter(
+        notification => !notification.read
+      ).length +
+      (user?.role === "Admin"
+        ? attendanceRequests.length
+        : 0)
+    }
 
+  </span>
+
+)
 )
 }
 
@@ -549,87 +581,75 @@ attendanceRequests.length
 
     {/* Attendance Access Requests */}
 
-    {
-      attendanceRequests.map(
-        (request) => (
+    {user?.role === "Admin" &&
+attendanceRequests.map((request) => (
 
-          <div
-            key={request.id}
-            className="notification-item"
-          >
+    <div
+        key={request.id}
+        className="notification-item"
+    >
 
-            <p>
+        <p>
 
-              <strong>
+            <strong>
                 {request.user_name}
-              </strong>
+            </strong>
 
-            </p>
+        </p>
 
-            <p>
-              {request.user_email}
-            </p>
+        <p>
+            {request.user_email}
+        </p>
 
-            <p>
-              Requested:
-              {" "}
-              {request.timestamp}
-            </p>
+        <p>
+            Requested:
+            {" "}
+            {request.timestamp}
+        </p>
 
-            <div
-              className="notification-actions"
-            >
+        <div className="notification-actions">
 
-              <button
+            <button
 
                 onClick={async () => {
 
-                  await approveAttendanceAccess(
-                    request.id
-                  );
-
-                  setAttendanceRequests(
-                    attendanceRequests.filter(
-                      (item) =>
-                        item.id !==
+                    await approveAttendanceAccess(
                         request.id
-                    )
-                  );
+                    );
+
+                    loadAttendanceRequests();
+
                 }}
-              >
+
+            >
 
                 Approve
 
-              </button>
+            </button>
 
-              <button
+            <button
 
                 onClick={async () => {
 
-                  await rejectAttendanceAccess(
-                    request.id
-                  );
-
-                  setAttendanceRequests(
-                    attendanceRequests.filter(
-                      (item) =>
-                        item.id !==
+                    await rejectAttendanceAccess(
                         request.id
-                    )
-                  );
+                    );
+
+                    loadAttendanceRequests();
+
                 }}
-              >
+
+            >
 
                 Reject
 
-              </button>
+            </button>
 
-            </div>
+        </div>
 
-          </div>
-        )
-      )
-    }
+    </div>
+
+))}
 
 
     {
@@ -778,16 +798,15 @@ leaveRequests.map(
       )
     }
 
-    {
-      attendanceRequests.length === 0 &&
-      notifications.length === 0 && (
-
-        <p>
-          No Notifications
-        </p>
-      )
-    }
-
+   {
+  (
+    (user?.role !== "Admin" ||
+      attendanceRequests.length === 0) &&
+    notifications.length === 0
+  ) && (
+    <p>No Notifications</p>
+  )
+}
   </div>
 )}
 

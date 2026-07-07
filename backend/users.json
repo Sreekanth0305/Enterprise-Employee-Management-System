@@ -53,7 +53,8 @@
         "deactivated_by": "",
         "deactivation_reason": "",
         "suspended_reason": "",
-        "suspended_by": ""
+        "suspended_by": "",
+        "attendance_access": true
     },
     {
         "id": 5,
@@ -131,7 +132,8 @@
         "company_name": "Company A",
         "status": "Active",
         "suspended_reason": "",
-        "suspended_by": ""
+        "suspended_by": "",
+        "attendance_access": true
     },
     {
         "id": 11,
@@ -169,7 +171,8 @@
         "suspended_by": "Admin A",
         "suspension_reason": "Account suspended by administrator",
         "suspension_date": "27-06-2026 12:39",
-        "suspended_reason": ""
+        "suspended_reason": "",
+        "attendance_access": true
     },
     {
         "id": 14,
@@ -218,7 +221,8 @@
         "company_name": "Company B",
         "status": "Active",
         "suspended_reason": "",
-        "suspended_by": ""
+        "suspended_by": "",
+        "attendance_access": true
     },
     {
         "id": 17,
@@ -230,7 +234,8 @@
         "company_name": "Company A",
         "status": "Active",
         "suspended_reason": "",
-        "suspended_by": ""
+        "suspended_by": "",
+        "attendance_access": true
     },
     {
         "id": 18,
@@ -240,7 +245,7 @@
         "role": "User",
         "company_id": 1,
         "company_name": "Company A",
-        "status": "Active",
+        "status": "Suspended",
         "profile_completion": 70,
         "missing_fields": [
             "phone_number",
@@ -257,6 +262,9 @@
         "date_of_joining": "2026-07-01",
         "employee_id": "02",
         "suspended_reason": "",
-        "suspended_by": ""
+        "suspended_by": "Admin A",
+        "suspension_reason": "Account suspended by administrator",
+        "suspension_date": "03-07-2026 14:27",
+        "attendance_access": true
     }
 ]

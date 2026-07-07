@@ -52,6 +52,7 @@ function ProtectedRoute({
       "/dashboard",
       "/employees",
       "/attendance",
+      "/login-devices",
       "/holiday-view",
       "/profile",
       "/settings",
