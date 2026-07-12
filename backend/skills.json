@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "employee_id": 1,
+        "company_id": 1,
+        "skill_name": "python",
+        "proficiency_level": "Advanced",
+        "years_of_experience": 1.0,
+        "primary_skill": true,
+        "created_at": "2026-07-12 22:33:49.359512"
+    },
+    {
+        "id": 2,
+        "employee_id": 10,
+        "company_id": 1,
+        "skill_name": "React",
+        "proficiency_level": "Advanced",
+        "years_of_experience": 1.0,
+        "primary_skill": true,
+        "created_at": "2026-07-12 22:38:02.478135"
+    },
+    {
+        "id": 3,
+        "employee_id": 10,
+        "company_id": 1,
+        "skill_name": "html",
+        "proficiency_level": "Advanced",
+        "years_of_experience": 1.0,
+        "primary_skill": false,
+        "created_at": "2026-07-12 22:38:16.982016"
+    },
+    {
+        "id": 4,
+        "employee_id": 13,
+        "company_id": 1,
+        "skill_name": "sql",
+        "proficiency_level": "Intermediate",
+        "years_of_experience": 2.0,
+        "primary_skill": true,
+        "created_at": "2026-07-12 22:53:22.704155"
+    }
+]

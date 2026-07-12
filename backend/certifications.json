@@ -1,0 +1,46 @@
+[
+    {
+        "id": 2,
+        "employee_id": 10,
+        "company_id": 1,
+        "certification_name": "react",
+        "issuing_organization": "nxtwave",
+        "issue_date": "2025-08-12",
+        "expiry_date": "2026-08-07",
+        "document_name": null,
+        "created_at": "2026-07-12 22:39:10.148675"
+    },
+    {
+        "id": 3,
+        "employee_id": 10,
+        "company_id": 1,
+        "certification_name": "css",
+        "issuing_organization": "nxtwave",
+        "issue_date": "2025-06-12",
+        "expiry_date": "2026-07-10",
+        "document_name": null,
+        "created_at": "2026-07-12 22:39:50.425867"
+    },
+    {
+        "id": 4,
+        "employee_id": 1,
+        "company_id": 1,
+        "certification_name": "sql",
+        "issuing_organization": "nxtwave",
+        "issue_date": "2025-06-12",
+        "expiry_date": "2026-07-31",
+        "document_name": null,
+        "created_at": "2026-07-12 22:41:17.847381"
+    },
+    {
+        "id": 4,
+        "employee_id": 13,
+        "company_id": 1,
+        "certification_name": "ms sql",
+        "issuing_organization": "nxtwave",
+        "issue_date": "2025-07-12",
+        "expiry_date": "2026-07-22",
+        "document_name": null,
+        "created_at": "2026-07-12 22:54:12.779972"
+    }
+]

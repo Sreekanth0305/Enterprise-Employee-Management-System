@@ -2478,5 +2478,271 @@
         "action": "User Login",
         "related_employee": "Admin A",
         "timestamp": "2026-07-09 10:53:45.929499"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "160.238.73.133",
+        "session_identifier": "de40d1b8-2cd7-469d-90d5-5a7cdaed405b",
+        "action": "Session Expired",
+        "performed_by": "System",
+        "timestamp": "2026-07-12 22:31:20.350879"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "115.98.33.153",
+        "session_identifier": "ab968129-f234-4a72-a7b0-3e7c8a16efd6",
+        "action": "User Login",
+        "performed_by": "Admin A",
+        "timestamp": "2026-07-12 22:31:20.382332"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "115.98.33.153",
+        "session_identifier": "ab968129-f234-4a72-a7b0-3e7c8a16efd6",
+        "action": "Trusted Device Added",
+        "performed_by": "Admin A",
+        "timestamp": "2026-07-12 22:31:20.406595"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-12 22:31:20.464415"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 1",
+        "action": "Skill Added",
+        "related_employee": "python",
+        "timestamp": "2026-07-12 22:33:49.361254"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 1",
+        "action": "Certification Added",
+        "related_employee": "power bi ",
+        "timestamp": "2026-07-12 22:35:14.557255"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 1",
+        "action": "Certification Updated",
+        "related_employee": "power bi advanced",
+        "timestamp": "2026-07-12 22:35:45.306230"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 1",
+        "action": "Certification Updated",
+        "related_employee": "power bi advanced",
+        "timestamp": "2026-07-12 22:36:25.888803"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-12 22:37:26.483375"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "115.98.33.153",
+        "session_identifier": "972bba97-ccc2-47fa-8395-33057b67d316",
+        "action": "User Login",
+        "performed_by": "Baby",
+        "timestamp": "2026-07-12 22:37:39.505035"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "115.98.33.153",
+        "session_identifier": "972bba97-ccc2-47fa-8395-33057b67d316",
+        "action": "Trusted Device Added",
+        "performed_by": "Baby",
+        "timestamp": "2026-07-12 22:37:39.538207"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Login",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-12 22:37:39.575540"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 10",
+        "action": "Skill Added",
+        "related_employee": "React",
+        "timestamp": "2026-07-12 22:38:02.481354"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 10",
+        "action": "Skill Added",
+        "related_employee": "html",
+        "timestamp": "2026-07-12 22:38:16.985293"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 10",
+        "action": "Certification Added",
+        "related_employee": "react",
+        "timestamp": "2026-07-12 22:39:10.152084"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 10",
+        "action": "Certification Added",
+        "related_employee": "css",
+        "timestamp": "2026-07-12 22:39:50.440635"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Baby",
+        "action": "User Logout",
+        "related_employee": "Baby",
+        "timestamp": "2026-07-12 22:39:54.530174"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-12 22:40:08.529924"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 1",
+        "action": "Certification Added",
+        "related_employee": "sql",
+        "timestamp": "2026-07-12 22:41:17.850416"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 1",
+        "action": "Certification Deleted",
+        "related_employee": "power bi advanced",
+        "timestamp": "2026-07-12 22:43:41.210575"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-12 22:48:38.839866"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-12 22:49:18.827244"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-12 22:49:33.971383"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "115.98.33.153",
+        "session_identifier": "27d880dc-a6be-436e-b20b-766a55bd2134",
+        "action": "User Login",
+        "performed_by": "there",
+        "timestamp": "2026-07-12 22:50:38.497694"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "device_name": "Win32",
+        "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+        "ip_address": "115.98.33.153",
+        "session_identifier": "27d880dc-a6be-436e-b20b-766a55bd2134",
+        "action": "Trusted Device Added",
+        "performed_by": "there",
+        "timestamp": "2026-07-12 22:50:38.519191"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "User Login",
+        "related_employee": "there",
+        "timestamp": "2026-07-12 22:50:38.551625"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "User Logout",
+        "related_employee": "there",
+        "timestamp": "2026-07-12 22:50:47.751581"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-12 22:52:32.868559"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Logout",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-12 22:52:50.371416"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "User Login",
+        "related_employee": "there",
+        "timestamp": "2026-07-12 22:53:03.078646"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 13",
+        "action": "Skill Added",
+        "related_employee": "sql",
+        "timestamp": "2026-07-12 22:53:22.705539"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Employee 13",
+        "action": "Certification Added",
+        "related_employee": "ms sql",
+        "timestamp": "2026-07-12 22:54:12.782192"
+    },
+    {
+        "company_id": 1,
+        "user_name": "there",
+        "action": "User Logout",
+        "related_employee": "there",
+        "timestamp": "2026-07-12 22:54:18.290104"
+    },
+    {
+        "company_id": 1,
+        "user_name": "Admin A",
+        "action": "User Login",
+        "related_employee": "Admin A",
+        "timestamp": "2026-07-12 22:54:30.734785"
     }
 ]

@@ -55,6 +55,8 @@ function ProtectedRoute({
       "/login-devices",
       "/holiday-view",
       "/profile",
+      "/skills",
+      "/certifications",
       "/settings",
       "/account-deactivated"
     ].includes(
